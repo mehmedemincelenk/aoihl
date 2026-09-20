@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b3d35" />
+    <meta name="application-name" content="AİÖHL REHBERİN" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta
+      name="description"
+      content="AİÖHL Rehberin: resmî kaynaklar, çıkmış sorular, ders kapsamları ve öğrenci işlemleri."
+    />
+    <title>AİÖHL REHBERİN — Sadece çift kanatlılar uçabilir.</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#kaynaklar">Kaynaklara geç</a>
+
+    <header class="topbar">
+      <div class="shell brand-row">
+        <a class="brand" href="#ust" aria-label="AİÖHL Rehberin ana sayfa" data-view-link="all">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span>
+            <strong>AİÖHL REHBERİN</strong>
+            <small>Sadece çift kanatlılar uçabilir.</small>
+          </span>
+        </a>
+        <span class="official-pill">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 12 2 2 4-5m6 3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+          Doğrulanmış
+        </span>
+        <button class="support-button" id="support-button" type="button" aria-haspopup="dialog">
+          <span aria-hidden="true">♡</span> Destek ol
+        </button>
+      </div>
+      <nav class="view-nav" aria-label="Ana bölümler">
+        <div class="shell view-tabs" id="view-tabs">
+          <button type="button" data-view="all" aria-pressed="true">Hepsi</button>
+          <button type="button" data-view="about" aria-pressed="false">AÖİHL nedir?</button>
+          <button type="button" data-view="exams" aria-pressed="false">Çıkmış sorular</button>
+          <button type="button" data-view="glossary" aria-pressed="false">Sözlük</button>
+          <button type="button" data-view="resources" aria-pressed="false">Resmî kaynaklar</button>
+          <button type="button" data-view="pathways" aria-pressed="false">İşlem yolları</button>
+          <button type="button" data-view="educators" aria-pressed="false">Kur’an kursları için</button>
+          <button type="button" data-view="prompts" aria-pressed="false">Oyunlaştır</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="ust">
+      <section class="intro shell" aria-labelledby="page-title" data-view-section="home">
+        <div class="intro-copy">
+          <p class="eyebrow">AİÖHL REHBERİN</p>
+          <h1 id="page-title">Sadece çift kanatlılar uçabilir.</h1>
+          <p>Resmî kaynaklar, öğrenci işlemleri, kitaplar, sınav kapsamları ve çıkmış sorular tek yerde.</p>
+        </div>
+
+        <a class="notice-card" href="https://aoihl.meb.gov.tr/www/kayit-duyurusu/icerik/482/tr" target="_blank" rel="noopener noreferrer">
+          <span class="notice-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Zm0-14v5m0 3h.01"/></svg>
+          </span>
+          <span class="notice-copy">
+            <span class="notice-label">Güncel · 2026–2027 / 1. dönem</span>
+            <strong>Kayıt ve kayıt yenileme başladı</strong>
+            <small>11 Eylül–12 Ekim 2026 · MEB duyurusu</small>
+          </span>
+          <svg class="external-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5m0-5-9 9M19 14v5H5V5h5"/></svg>
+        </a>
+
+        <a class="exam-countdown" href="https://aoihl.meb.gov.tr/www/kayit-duyurusu/icerik/482/tr" target="_blank" rel="noopener noreferrer" aria-label="Sıradaki yüz yüze sınav için kalan zaman ve resmî duyuru">
+          <span class="countdown-copy">
+            <small>Sıradaki yüz yüze sınav · 20 Aralık 2026</small>
+            <strong id="countdown-title">Sınava kalan zaman</strong>
+          </span>
+          <span class="countdown-units" id="exam-countdown" aria-live="polite">
+            <span><b>—</b><small>gün</small></span>
+            <span><b>—</b><small>saat</small></span>
+            <span><b>—</b><small>dk</small></span>
+          </span>
+          <svg class="external-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5m0-5-9 9M19 14v5H5V5h5"/></svg>
+        </a>
+      </section>
+
+      <section class="about-school shell" id="aoihl-nedir" aria-labelledby="about-title" data-view-section="about">
+        <div class="about-shell">
+          <div class="about-heading">
+            <div>
+              <p class="eyebrow">Sıfırdan başla</p>
+              <h2 id="about-title">AÖİHL nedir?</h2>
+              <p>Açık Öğretim İmam Hatip Lisesini ilk kez duyan biri için okulun nasıl işlediğinin kısa ve anlaşılır özeti.</p>
+            </div>
+            <a class="about-official" href="https://aoihl.meb.gov.tr/meb_iys_dosyalar/2025_08/29112015_aoihltanitim.pdf" target="_blank" rel="noopener noreferrer">
+              Resmî tanıtım
+              <svg class="external-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5m0-5-9 9M19 14v5H5V5h5"/></svg>
+            </a>
+          </div>
+
+          <div class="questions-hero">
+            <div class="questions-hero-copy">
+              <span class="questions-kicker">En çok aranan · ÖDSGM</span>
+              <h3>Çıkmış Sorular</h3>
+              <p>AÖİHL resmî soru kitapçıklarını cevap anahtarlarıyla çöz; yıl ve dönem arşivine tek yerden ulaş.</p>
+              <div class="questions-actions">
+                <a class="questions-primary" href="#cikmis-sorular">
+                  <span>
+                    <small>En yeni · 2025–2026 / 3. dönem</small>
+                    Soru merkezini aç
+                  </span>
+                  <svg class="external-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5m0-5-9 9M19 14v5H5V5h5"/></svg>
+                </a>
+                <a class="questions-archive" href="#cikmis-sorular">Yıl ve dönem seç →</a>
+              </div>
+            </div>
+            <span class="questions-mark" aria-hidden="true">?</span>
+          </div>
+
+          <div class="about-basics" aria-label="AÖİHL temel bilgiler">
+            <article class="about-lead">
+              <span class="about-number">01</span>
+              <h3>En kısa tanımıyla</h3>
+              <p><strong>AÖİHL, Açık Öğretim İmam Hatip Lisesidir.</strong> Program içeriği Anadolu İmam Hatip Liseleriyle aynı temele dayanır; ancak devam ve öğrenme biçimi açık öğretime özgüdür. Ders geçme ve kredi sistemi uygulanır.</p>
+            </article>
+
+            <details class="about-detail" open>
+              <summary>
+                <span class="about-number">02</span>
+                <span><strong>Eğitim nasıl yürür?</strong><small>Uzaktan + yüz yüze olmak üzere iki bölüm vardır.</small></span>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <div class="about-detail-body">
+                <div class="about-split">
+                  <div><strong>Uzaktan eğitim dersleri</strong><p>Ortak ve seçmeli dersleri kitap, EBA/A-Okul gibi resmî materyallerle çalışırsın; sınavlarına MEB’in ilan ettiği şekilde girersin.</p></div>
+                  <div><strong>Yüz yüze alan dersleri</strong><p>İmam hatip alan/meslek derslerini yüz yüze eğitim veren okul veya kurumda alırsın. Devam, ders ve not işlemleri bu kurum üzerinden yürür.</p></div>
+                </div>
+              </div>
+            </details>
+
+            <details class="about-detail">
+              <summary>
+                <span class="about-number">03</span>
+                <span><strong>Kredi, dönem ve zorunlu ders ne demek?</strong><small>Mezuniyet yalnızca toplam krediye bağlı değildir.</small></span>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <div class="about-detail-body">
+                <ul>
+                  <li><strong>Kredi:</strong> Başardığın her ders, o dersin kredisini toplamına ekler.</li>
+                  <li><strong>Dönem:</strong> Öğrenim süren sistemde dönem olarak izlenir; kayıt yenilediğin her dönem önemlidir.</li>
+                  <li><strong>Zorunlu ders:</strong> Mezuniyet için tamamlanması veya resmî kurala göre muaf olunması gereken derstir.</li>
+                  <li><strong>Alan kredisi:</strong> Yüz yüze alınan imam hatip alan/meslek derslerinden kazanılır.</li>
+                </ul>
+                <p class="about-caution">Kesin mezuniyet koşulları kayıt tarihi ve tabi olduğun programa göre değişebildiği için güncel resmî mezuniyet tablosunu kontrol et.</p>
+                <a class="about-inline-link" href="https://aoihl.meb.gov.tr/meb_iys_dosyalar/2025_10/08121219_aoihlmezuniyetsartlari_8ekim2025.pdf" target="_blank" rel="noopener noreferrer">Mezuniyet şartlarını aç →</a>
+              </div>
+            </details>
+
+            <details class="about-detail">
+              <summary>
+                <span class="about-number">04</span>
+                <span><strong>Bir dönem nasıl ilerler?</strong><small>Kayıt yenilemeden sonuca kadar temel sıra.</small></span>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <div class="about-detail-body">
+                <ol class="term-flow">
+                  <li><span>Kayıt / yenileme</span><small>Güncel duyuruyu ve öğrencilik durumunu kontrol et.</small></li>
+                  <li><span>Ders seçimi</span><small>Uzaktan derslerini öğrenci sisteminden seç; yüz yüze derslerini okulunla planla.</small></li>
+                  <li><span>Çalışma</span><small>Resmî kitaplardan sorumlu olduğun ünite ve sayfalara çalış.</small></li>
+                  <li><span>Sınav</span><small>Giriş belgesi veya e-Sınav randevunu al ve sınava gir.</small></li>
+                  <li><span>Sonuç</span><small>Not, kredi ve kalan zorunlu derslerini öğrenci sisteminden kontrol et.</small></li>
+                </ol>
+              </div>
+            </details>
+
+            <details class="about-detail">
+              <summary>
+                <span class="about-number">05</span>
+                <span><strong>Yeni başlayan ne yapmalı?</strong><small>İlk gün için 5 basit adım.</small></span>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <div class="about-detail-body">
+                <ol class="starter-list">
+                  <li>Güncel kayıt kılavuzundan başvuru hakkını ve gerekli belgeleri kontrol et.</li>
+                  <li>Yüz yüze eğitim alacağın okul/kurumu ve kontenjanı bul.</li>
+                  <li>Kayıt tamamlanınca öğrenci sisteminde durumunun <strong>Aktif</strong> olduğunu doğrula.</li>
+                  <li>Derslerini seç; kitaplarını indir ve sorumlu olduğun üniteleri not et.</li>
+                  <li>İş takvimi, sınav belgesi ve sonuç tarihlerini resmî duyurulardan takip et.</li>
+                </ol>
+                <div class="starter-actions">
+                  <a href="https://aoihl.meb.gov.tr/www/kayit-duyurusu/icerik/482/tr" target="_blank" rel="noopener noreferrer">Güncel kayıt duyurusu</a>
+                  <a href="https://aolweb.meb.gov.tr/yykurum_kontenjan.aspx" target="_blank" rel="noopener noreferrer">Yüz yüze eğitim okulu bul</a>
+                  <a href="https://aolweb.meb.gov.tr/ogrenci_giris.aspx" target="_blank" rel="noopener noreferrer">Öğrenci sistemine gir</a>
+                </div>
+              </div>
+            </details>
+
+            <details class="about-detail">
+              <summary>
+                <span class="about-number">06</span>
+                <span><strong>Mezun olmak için genel olarak ne gerekir?</strong><small>Dört koşulu birlikte düşün.</small></span>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <div class="about-detail-body">
+                <div class="graduation-grid">
+                  <span>Gerekli dönem</span>
+                  <span>Toplam ve alan kredisi</span>
+                  <span>Zorunlu ortak dersler</span>
+                  <span>Yüz yüze eğitimin tamamlanması</span>
+                </div>
+                <p class="about-caution">Bu bölüm genel çerçevedir. Kesin durumunu öğrenci sistemindeki kredi/dönem bilgileriyle ve resmî mezuniyet şartlarıyla karşılaştır.</p>
+              </div>
+            </details>
+          </div>
+
+          <p class="about-source-note">Bilgiler AÖİHL’nin resmî tanıtımı, güncel kılavuzları ve SSS sayfalarına göre özetlenmiştir. Başvuru şartları ve tarihler değişebileceği için işlem yaparken güncel duyuruyu esas al.</p>
+        </div>
+      </section>
+
+      <section class="exam-center" id="cikmis-sorular" aria-labelledby="exam-center-title" data-view-section="exams">
+        <div class="shell">
+          <div class="feature-heading feature-heading-light">
+            <div>
+              <p class="eyebrow">ÖDSGM resmî arşivi</p>
+              <h2 id="exam-center-title">Çıkmış Sorular Merkezi</h2>
+              <p>Yılı ve dönemi seç; soru kitapçıklarını ve cevap anahtarlarını resmî sayfadan aç.</p>
+            </div>
+            <span class="feature-count" id="exam-count" aria-live="polite"></span>
+          </div>
+          <div class="exam-filters" id="exam-filters" aria-label="Sınav yılı filtreleri"></div>
+          <div class="exam-grid" id="exam-grid"></div>
+          <div class="center-empty" id="exam-empty" hidden>Bu filtrede sınav bulunamadı.</div>
+          <div class="exam-footer">
+            <p>Kitapçıkların içindeki ders kodunu, öğrenci sistemindeki ders kodunla karşılaştır.</p>
+            <a href="https://odsgm.meb.gov.tr/www/sinavlar/kategori/50" target="_blank" rel="noopener noreferrer">ÖDSGM’nin tüm sınav arşivi →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="glossary-zone" id="sozluk" aria-labelledby="glossary-title" data-view-section="glossary">
+        <div class="shell">
+          <div class="feature-heading">
+            <div>
+              <p class="eyebrow">Açık öğretim dili, sade Türkçe</p>
+              <h2 id="glossary-title">AÖİHL Sözlüğü</h2>
+              <p>Resmî anlamı öğren; teknik kavramları kısa oyun benzetmeleriyle daha kolay hatırla.</p>
+            </div>
+            <span class="feature-count" id="glossary-count" aria-live="polite"></span>
+          </div>
+          <div class="feature-search glossary-search">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+            <label class="sr-only" for="glossary-search">Sözlükte ara</label>
+            <input id="glossary-search" type="search" autocomplete="off" placeholder="Örn. donuk, muaf, kredi…" />
+          </div>
+          <dl class="glossary-grid" id="glossary-grid"></dl>
+          <div class="center-empty" id="glossary-empty" hidden>Bu terim sözlükte bulunamadı.</div>
+          <p class="feature-disclaimer">Tanımlar öğrencinin anlayacağı biçimde sadeleştirilmiştir. Resmî işlemde AÖİHL kılavuzu ve öğrenci sistemindeki durum esas alınır.</p>
+        </div>
+      </section>
+
+      <section class="pathways shell" id="islem-yollari" aria-labelledby="pathways-title" data-view-section="pathways">
+        <div class="pathways-heading">
+          <div>
+            <p class="eyebrow">Adım adım işlem yolları</p>
+            <h2 id="pathways-title">Aradığını bulamadın mı?</h2>
+            <p>Yapmak istediğin işlemi seç; hangi ekrana, hangi sırayla gideceğini gör.</p>
+          </div>
+          <span class="pathway-count" id="pathway-count" aria-live="polite"></span>
+        </div>
+
+        <div class="pathway-tools">
+          <div class="pathway-search">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+            <label class="sr-only" for="pathway-search">İşlem yollarında ara</label>
+            <input id="pathway-search" type="search" autocomplete="off" placeholder="Örn. kaldığım dersler, sınav belgesi…" />
+          </div>
+          <div class="pathway-chips" id="pathway-chips" aria-label="İşlem yolu kategorileri"></div>
+        </div>
+
+        <div class="pathway-grid" id="pathway-grid"></div>
+        <div class="pathway-empty" id="pathway-empty" hidden>
+          <strong>Bu ifadeyle bir işlem yolu bulunamadı.</strong>
+          <span>MEBİM’e 444 0 632 numarasından 7/24 ulaşabilirsin.</span>
+        </div>
+        <p class="pathway-disclaimer">Menü adları sistem güncellemeleriyle küçük farklılık gösterebilir. İşlem tarihleri için her zaman güncel AÖİHL duyurusunu esas al.</p>
+      </section>
+
+      <section class="educator-hub shell" id="egitimci-kurumlar" aria-labelledby="educator-title" data-view-section="educators">
+        <div class="educator-placeholder">
+          <p class="eyebrow">Kur’an kursları için</p>
+          <h2 id="educator-title">Araç alanı hazırlanıyor</h2>
+          <p>Bu özel sekme yalnızca kursun eğitim sorumlusu için geliştirilecek gerçek araçlara ayrıldı.</p>
+        </div>
+      </section>
+
+      <section class="prompt-lab" aria-labelledby="prompt-title" data-view-section="prompts">
+        <div class="shell">
+          <div class="prompt-heading">
+            <p class="eyebrow">Soru aynı, hikâye daha eğlenceli</p>
+            <h2 id="prompt-title">Sorunu fotoğrafla, promptunu seç</h2>
+            <p>Soruyu elle yazmakla vakit kaybetme. Test sayfasının veya çözmek istediğin sorunun net bir fotoğrafını yapay zekâ aracına yükle; ardından aşağıdaki promptlardan birini yapıştır.</p>
+          </div>
+
+          <div class="photo-prompt-guide">
+            <div><b>1</b><span><strong>Fotoğrafı çek</strong><small>Soru ve seçeneklerin tamamı görünsün; gölge ve bulanıklık olmasın.</small></span></div>
+            <div><b>2</b><span><strong>Yapay zekâ aracına yükle</strong><small>Tek soruyu veya test sayfanın fotoğrafını doğrudan ekleyebilirsin.</small></span></div>
+            <div><b>3</b><span><strong>Promptu yapıştır</strong><small>Aşağıdaki temalardan birini kopyala ve fotoğrafın ardından gönder.</small></span></div>
+            <div><b>4</b><span><strong>Sonucu kontrol et</strong><small>Sayılar, seçenekler ve istenen bilgi fotoğraftaki soruyla aynı kalmalı.</small></span></div>
+          </div>
+
+          <p class="photo-safety"><strong>Fotoğraf ipucu:</strong> Ad-soyad, öğrenci numarası, okul bilgisi veya başka kişisel bilgiler görünüyorsa yüklemeden önce kırp ya da kapat. Çok sayfalı testleri sayfa sayfa gönder.</p>
+
+          <div class="prompt-principles" aria-label="Güvenli soru dönüştürme kuralları">
+            <span><b>1</b><small>Sayıları korur</small></span>
+            <span><b>2</b><small>Kazanımı korur</small></span>
+            <span><b>3</b><small>Cevabı değiştirmez</small></span>
+            <span><b>4</b><small>Yeni bilgi istemez</small></span>
+          </div>
+
+          <div class="prompt-library-heading">
+            <div><p class="eyebrow">Hazır tarifler</p><h3>Tek dokunuşla kopyala</h3></div>
+            <span id="prompt-count"></span>
+          </div>
+          <div class="prompt-grid" id="prompt-grid"></div>
+          <details class="prompt-example">
+            <summary><span>Örnek dönüşümü gör</span><small>Matematik → League of Legends</small><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <div class="prompt-example-grid">
+              <div><span>Orijinal</span><p>Bir depoda 240 kutu vardır. Kutuların %25’i sevk edilirse depoda kaç kutu kalır?</p></div>
+              <div><span>Dönüştürülmüş</span><p>Piltover deposunda 240 iksir kutusu var. Bir görev için kutuların %25’i Vadi’ye gönderiliyor. Depoda kaç iksir kutusu kalır?</p></div>
+            </div>
+            <p class="example-check">✓ 240 ve %25 korundu · ✓ İstenen işlem aynı · ✓ Yeni oyun bilgisi gerekmiyor</p>
+          </details>
+          <p class="prompt-note">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Zm0-14v5m0 3h.01"/></svg>
+            Dönüştürülen soruyu çözmeden önce sayıları ve istenen bilgiyi orijinaliyle karşılaştır.
+          </p>
+          <p class="copy-status" id="copy-status" aria-live="polite" aria-atomic="true"></p>
+        </div>
+      </section>
+
+      <section class="tools-wrap" aria-label="Kaynaklarda ara ve filtrele" data-view-section="resources">
+        <div class="shell tools">
+          <div class="quick-access-heading"><p class="eyebrow">Sayfanın en altında</p><h2>Hızlı erişim</h2></div>
+          <form class="search-box" role="search" id="search-form">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+            <label class="sr-only" for="search">Resmî kaynaklarda ara</label>
+            <input id="search" type="search" inputmode="search" autocomplete="off" placeholder="Kaynak ara… örn. ders, diploma, soru" />
+            <button class="clear-search" id="clear-search" type="button" aria-label="Aramayı temizle" hidden><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m7 7 10 10M17 7 7 17"/></svg></button>
+          </form>
+          <div class="chip-scroller" id="category-chips" aria-label="Kategoriler"></div>
+          <div class="result-line" aria-live="polite" aria-atomic="true"><span id="result-count"></span><button id="reset-filters" type="button" hidden>Filtreleri temizle</button></div>
+        </div>
+      </section>
+
+      <section class="shell resources" id="kaynaklar" aria-labelledby="resources-title" data-view-section="resources">
+        <h2 class="sr-only" id="resources-title">Resmî kaynaklar</h2>
+        <div id="resource-sections"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+          <strong>Eşleşen kaynak bulunamadı</strong><p>Daha kısa bir kelime deneyin veya filtreleri temizleyin.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-inner">
+        <p><strong>AİÖHL REHBERİN</strong> bağımsız bir bağlantı rehberidir; yalnız resmî sayfalara yönlendirir.</p>
+        <p>Bağlantılar 21 Eylül 2026 tarihinde kontrol edildi.</p>
+      </div>
+    </footer>
+
+    <button class="to-top" id="to-top" type="button" aria-label="Sayfanın başına dön" hidden>
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></svg>
+    </button>
+
+    <aside class="install-banner" id="install-banner" hidden aria-labelledby="install-title">
+      <span class="install-icon" aria-hidden="true">A</span>
+      <span>
+        <strong id="install-title">AİÖHL REHBERİN’i telefona ekle</strong>
+        <small>Uygulama gibi aç; temel rehberlere çevrimdışı da ulaş.</small>
+      </span>
+      <button id="install-app" type="button">Yükle</button>
+      <button class="install-close" id="install-close" type="button" aria-label="Yükleme önerisini kapat">×</button>
+    </aside>
+
+    <dialog class="support-dialog" id="support-dialog" aria-labelledby="support-title">
+      <form method="dialog" class="support-dialog-inner">
+        <button class="support-close" value="close" aria-label="Destek penceresini kapat">×</button>
+        <span class="support-heart" aria-hidden="true">♡</span>
+        <p class="eyebrow">Bu rehber ücretsiz kalacak</p>
+        <h2 id="support-title">Emeğe destek ol</h2>
+        <p>Bağışlar; bağlantıları güncel tutmaya, yeni araçlar geliştirmeye ve rehberi herkes için ücretsiz sürdürmeye yardımcı olur.</p>
+        <button class="support-donate" id="support-donate" type="button" disabled>Bağış bağlantısı yakında</button>
+        <button class="support-share" id="support-share" type="button">Şimdilik rehberi paylaş</button>
+        <small>Bağış hesabı veya ödeme sayfası eklenince bu düğme doğrudan ödeme ekranını açacak.</small>
+      </form>
+    </dialog>
+
+    <noscript>
+      <p class="noscript">Kaynak listesini görmek ve aramayı kullanmak için JavaScript’i etkinleştirin.</p>
+    </noscript>
+    <script src="app.js" defer></script>
+  </body>
+</html>
