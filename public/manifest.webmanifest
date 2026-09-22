@@ -1,0 +1,20 @@
+{
+  "name": "AİÖHL REHBERİN — Sadece çift kanatlılar uçabilir.",
+  "short_name": "AİÖHL REHBERİN",
+  "description": "AİÖHL Rehberin: resmî kaynaklar, çıkmış sorular, ders kapsamları ve işlem rehberleri.",
+  "lang": "tr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7faf8",
+  "theme_color": "#0b3d35",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

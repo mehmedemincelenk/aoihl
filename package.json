@@ -1,0 +1,23 @@
+{
+  "name": "outputs",
+  "version": "1.0.0",
+  "description": "**Sadece çift kanatlılar uçabilir.**",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehmedemincelenk/aoihl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehmedemincelenk/aoihl/issues"
+  },
+  "homepage": "https://github.com/mehmedemincelenk/aoihl#readme",
+  "devDependencies": {
+    "wrangler": "^4.135.0"
+  }
+}
