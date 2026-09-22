@@ -11,17 +11,17 @@
       name="description"
       content="AİÖHL Rehberin: çıkmış sorular, sade açıklamalar ve resmî öğrenci işlemleri için başucu rehberi."
     />
-    <title>AİÖHL REHBERİN — Sadece çift kanatlılar uçabilir.</title>
+    <title>AİÖHL REHBERİN — Açık İmam Hatip Öğrenci Rehberi</title>
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#kaynaklar">Kaynaklara geç</a>
+    <a class="skip-link" href="#ust">İçeriğe geç</a>
 
     <header class="topbar">
       <div class="shell brand-row">
-        <a class="brand" href="#ust" aria-label="AİÖHL Rehberin ana sayfa" data-view-link="all">
+        <a class="brand" href="#ust" aria-label="AİÖHL Rehberin ana sayfa" data-view-link="home">
           <span class="brand-mark" aria-hidden="true">A</span>
           <span>
             <strong>AİÖHL REHBERİN</strong>
@@ -33,43 +33,100 @@
           Bağımsız rehber
         </span>
         <button class="support-button" id="support-button" type="button" aria-haspopup="dialog">
-          <span aria-hidden="true">♡</span> Destek ol
+          <span class="support-organ-heart" aria-hidden="true">🫀</span> Destek ol
         </button>
       </div>
-      <nav class="view-nav" aria-label="Ana bölümler">
-        <div class="shell view-tabs" id="view-tabs">
-          <button type="button" data-view="all" aria-pressed="true">Hepsi</button>
-          <button type="button" data-view="about" aria-pressed="false">AÖİHL nedir?</button>
-          <button type="button" data-view="exams" aria-pressed="false">Çıkmış sorular</button>
-          <button type="button" data-view="glossary" aria-pressed="false">Sözlük</button>
-          <button type="button" data-view="resources" aria-pressed="false">Resmî kaynaklar</button>
-          <button type="button" data-view="pathways" aria-pressed="false">İşlem yolları</button>
-          <button type="button" data-view="educators" aria-pressed="false">Kur’an kursları için</button>
-          <button type="button" data-view="prompts" aria-pressed="false">Oyunlaştır</button>
-        </div>
-      </nav>
     </header>
 
     <main id="ust">
       <section class="intro shell" aria-labelledby="page-title" data-view-section="home">
-        <div class="intro-copy">
-          <p class="eyebrow">AİÖHL REHBERİN</p>
-          <h1 id="page-title">Sadece çift kanatlılar uçabilir.</h1>
-          <p>Çıkmış sorularla çalış. Takıldığın işlemi öğren. Resmî kaynağa kolayca ulaş.</p>
+        <!-- Hero Header -->
+        <div class="intro-hero">
+          <div class="landing-pill">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span>Açık Öğretim İmam Hatip Lisesi Platformu</span>
+          </div>
+          <h1 id="page-title">
+            Açık İmam Hatip’te kaybolma.
+            <span class="hero-gradient">Mezuniyetine odaklan.</span>
+          </h1>
+          <p class="intro-desc">
+            Çıkmış sorular, sade sözlük, ders seçim yolları ve MEB resmî bağlantıları. Bürokrasiden uzak, tamamen öğrenci odaklı açık rehber.
+          </p>
+          <div class="landing-actions">
+            <button type="button" class="btn-hero-primary" data-view-jump="exams">
+              <span>Sınav Sorularını Aç</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+            </button>
+            <button type="button" class="landing-support-pill" id="landing-support-modal-btn">
+              <span class="support-organ-heart" aria-hidden="true">🫀</span> Destek Ol & IBAN
+            </button>
+          </div>
         </div>
 
-        <nav class="home-navigation" aria-label="Bölümler">
-          <h2>Nereye gitmek istersin?</h2>
-          <div class="home-actions">
-            <a class="home-primary" href="#cikmis-sorular">Çıkmış soruları aç <span aria-hidden="true">↗</span></a>
-            <a href="#prompt-title">Oyunlaştır <span aria-hidden="true">→</span></a>
-            <a href="#aoihl-nedir">AÖİHL nedir? <span aria-hidden="true">→</span></a>
-            <a href="#sozluk">Sözlük <span aria-hidden="true">→</span></a>
-            <a href="#islem-yollari">İşlem yolları <span aria-hidden="true">→</span></a>
-            <a href="#kaynaklar">Resmî kaynaklar <span aria-hidden="true">→</span></a>
-            <a href="#egitimci-kurumlar">Kur’an kursları için <span aria-hidden="true">→</span></a>
+        <!-- Astra 6 Style Metrics Bar -->
+        <div class="landing-stats-grid">
+          <div class="stat-card">
+            <span class="stat-number">44+</span>
+            <span class="stat-label">Resmî MEB Bağlantısı</span>
           </div>
-        </nav>
+          <div class="stat-card">
+            <span class="stat-number">3×3</span>
+            <span class="stat-label">Kompakt Sınav Arşivi</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">28+</span>
+            <span class="stat-label">Sadeleştirilmiş Terim</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">%100</span>
+            <span class="stat-label">Bağımsız & Reklamsız</span>
+          </div>
+        </div>
+
+        <!-- Modern Bento Feature Grid -->
+        <div class="landing-bento-grid">
+          <article class="bento-card" data-view-jump="exams" tabindex="0" role="button">
+            <div class="bento-badge">📚 Soru Arşivi</div>
+            <h3>ÖDSGM Çıkmış Sınavlar</h3>
+            <p>1., 2. ve 3. dönem sınav kitapçıkları ve cevap anahtarlarına 3x3 kompakt düzenle tek tıkla ulaşın.</p>
+            <span class="bento-link">Soruları İncele →</span>
+          </article>
+
+          <article class="bento-card" data-view-jump="glossary" tabindex="0" role="button">
+            <div class="bento-badge">📖 Açık Lise Dili</div>
+            <h3>Sade Sözlük</h3>
+            <p>Kredi, muafiyet, donuk, silik ve yüz yüze eğitim kurallarının karmaşık bürokrasiden arındırılmış net tanımları.</p>
+            <span class="bento-link">Sözlüğe Bak →</span>
+          </article>
+
+          <article class="bento-card" data-view-jump="pathways" tabindex="0" role="button">
+            <div class="bento-badge">🧭 Adım Adım</div>
+            <h3>İşlem Yolları</h3>
+            <p>Ders seçimi, sınav yeri değişikliği ve e-Devlet barkodlu mezuniyet belgelerine giden net işlem kılavuzları.</p>
+            <span class="bento-link">Kılavuzları Gör →</span>
+          </article>
+
+          <article class="bento-card" data-view-jump="educators" tabindex="0" role="button">
+            <div class="bento-badge">🕌 Talebelere Özel</div>
+            <h3>Kur’an Kursları & Hafızlık</h3>
+            <p>Yüz yüze eğitim alan ve hafızlık çalışan öğrencilere yönelik muafiyet, devam ve denklik yönergeleri.</p>
+            <span class="bento-link">Kurs Modülünü Aç →</span>
+          </article>
+        </div>
+
+        <!-- Dedicated Modern Support Card -->
+        <div class="landing-support-showcase">
+          <div class="support-showcase-header">
+            <span class="support-organ-heart" aria-hidden="true">🫀</span>
+            <span class="support-showcase-tag">Gönüllü & Açık Girişim</span>
+          </div>
+          <h2>Projeyi Birlikte Yaşatalım</h2>
+          <p>AİÖHL Rehberin hiçbir ticari gelir veya fon almadan, tamamen açık lise öğrencilerinin hayatını kolaylaştırmak için geliştirilmektedir. Sunucu ve bakım masraflarına katkı sağlamak veya projeye yatırım yapmak için dilediğiniz gibi destek olabilirsiniz.</p>
+          <button type="button" class="btn-support-donate" id="landing-support-donate-btn">
+            <span class="support-organ-heart" aria-hidden="true">🫀</span> IBAN ve Destek Bilgileri
+          </button>
+        </div>
       </section>
 
       <section class="exam-center" id="cikmis-sorular" aria-labelledby="exam-center-title" data-view-section="exams">
@@ -106,7 +163,6 @@
             </a>
           </div>
 
-          <a class="home-preview-link" href="#aoihl-nedir">AÖİHL nedir? bölümünü aç →</a>
           <div class="about-basics" aria-label="AÖİHL temel bilgiler">
             <article class="about-lead">
               <span class="about-number">01</span>
@@ -217,14 +273,14 @@
             </div>
             <span class="feature-count" id="glossary-count" aria-live="polite"></span>
           </div>
-          <a class="home-preview-link" href="#sozluk">Sözlüğü aç →</a>
-          <div class="feature-search glossary-search">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
-            <label class="sr-only" for="glossary-search">Sözlükte ara</label>
-            <input id="glossary-search" type="search" autocomplete="off" placeholder="Örn. donuk, muaf, kredi…" />
+          <div class="sticky-search-wrapper" data-sticky-search="glossary">
+            <div class="feature-search glossary-search">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+              <label class="sr-only" for="glossary-search">Sözlükte ara</label>
+              <input id="glossary-search" type="search" autocomplete="off" placeholder="Örn. donuk, muaf, kredi…" />
+            </div>
           </div>
           <div class="glossary-grid" id="glossary-grid"></div>
-          <a class="glossary-more" href="#sozluk">Sözlüğün tamamını aç →</a>
           <div class="center-empty" id="glossary-empty" hidden>Bu terim sözlükte bulunamadı.</div>
           <p class="feature-disclaimer">Tanımlar sadeleştirilmiştir. <a href="https://aoihl.meb.gov.tr/www/acik-ogretim-okullarinda-kullanilan-terimler/icerik/228" target="_blank" rel="noopener noreferrer">Resmî terimler</a> ve <a href="https://aoihl.meb.gov.tr/meb_iys_dosyalar/2025_10/08151425_aoihlmezuniyetsartlari_8ekim2025.pdf" target="_blank" rel="noopener noreferrer">mezuniyet koşulları</a> kişisel durumunu doğrulamak için temel kaynaklardır.</p>
         </div>
@@ -238,7 +294,6 @@
             <p>Yapmak istediğin işlemi seç; hangi ekrana, hangi sırayla gideceğini gör.</p>
           </div>
         </div>
-        <a class="home-preview-link" href="#islem-yollari">İşlem yollarını aç →</a>
         <div class="pathway-grid" id="pathway-grid"></div>
         <p class="pathway-disclaimer">Menü adları sistem güncellemeleriyle küçük farklılık gösterebilir. İşlem tarihleri için her zaman güncel AÖİHL duyurusunu esas al.</p>
       </section>
@@ -258,7 +313,6 @@
             <h2 id="prompt-title">Oyunlaştır</h2>
             <p>Sorunun veya test sayfanın net fotoğrafını yapay zekâ aracına yükle, aşağıdan bir prompt seçip kopyala. Dönüşen sorunun sayılarını, seçeneklerini ve cevabını aslıyla karşılaştır.</p>
           </div>
-          <a class="home-preview-link" href="#prompt-title">Hazır promptları aç →</a>
           <p class="photo-safety"><strong>Fotoğrafı yüklemeden önce:</strong> Ad-soyad, öğrenci numarası ve diğer kişisel bilgileri kırp ya da kapat.</p>
 
           <div class="prompt-library-heading">
@@ -269,16 +323,28 @@
         </div>
       </section>
 
-      <section class="tools-wrap" aria-label="Hızlı erişim" data-view-section="resources">
-        <div class="shell tools">
-          <div class="quick-access-heading"><p class="eyebrow">İhtiyacın olduğunda</p><h2>Resmî kaynaklar</h2><p>Öğrenci işlemleri, belgeler ve resmî duyurular tek yerde.</p></div>
-          <a class="home-preview-link" href="#kaynaklar">Resmî kaynakları aç →</a>
-        </div>
-      </section>
+      <section class="resources-zone" id="kaynaklar" aria-labelledby="resources-title" data-view-section="resources">
+        <div class="shell">
+          <div class="feature-heading">
+            <div>
+              <p class="eyebrow">İhtiyacın olduğunda</p>
+              <h2 id="resources-title">Resmî kaynaklar</h2>
+              <p>Öğrenci işlemleri, belgeler ve resmî duyurular tek yerde.</p>
+            </div>
+            <span class="feature-count" id="resources-count" aria-live="polite"></span>
+          </div>
 
-      <section class="shell resources" id="kaynaklar" aria-labelledby="resources-title" data-view-section="resources">
-        <h2 class="sr-only" id="resources-title">Resmî kaynaklar</h2>
-        <div id="resource-sections"></div>
+          <div class="sticky-search-wrapper" data-sticky-search="resources">
+            <div class="feature-search resources-search">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+              <label class="sr-only" for="resources-search">Resmî kaynaklarda ara</label>
+              <input id="resources-search" type="search" autocomplete="off" placeholder="Örn. e-Devlet, sınav giriş, kayıt kılavuzu…" />
+            </div>
+          </div>
+
+          <div id="resource-sections"></div>
+          <div class="center-empty" id="resources-empty" hidden>Bu aramayla eşleşen kaynak bulunamadı.</div>
+        </div>
       </section>
     </main>
 
@@ -288,6 +354,22 @@
         <p>Kaynak incelemesi: 21 Eylül 2026. Resmî işlem öncesinde açtığın kaynağı kontrol et.</p>
       </div>
     </footer>
+
+    <nav class="bottom-bar" id="bottom-bar" aria-label="Bölüm gezintisi">
+      <div class="bottom-bar-scroller" id="view-tabs">
+        <button type="button" data-view="home" aria-pressed="true">Ana sayfa</button>
+        <button type="button" class="bottom-support-chip" id="bottom-support-trigger" aria-haspopup="dialog">
+          <span class="support-organ-heart" aria-hidden="true">🫀</span> Destek Ol
+        </button>
+        <button type="button" data-view="exams" aria-pressed="false">Çıkmış sorular</button>
+        <button type="button" data-view="about" aria-pressed="false">AÖİHL nedir?</button>
+        <button type="button" data-view="glossary" aria-pressed="false">Sözlük</button>
+        <button type="button" data-view="resources" aria-pressed="false">Resmî kaynaklar</button>
+        <button type="button" data-view="pathways" aria-pressed="false">İşlem yolları</button>
+        <button type="button" data-view="educators" aria-pressed="false">Kur’an kursları</button>
+        <button type="button" data-view="prompts" aria-pressed="false">Oyunlaştır</button>
+      </div>
+    </nav>
 
     <button class="to-top" id="to-top" type="button" aria-label="Sayfanın başına dön" hidden>
       <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></svg>
@@ -304,16 +386,38 @@
     </aside>
 
     <dialog class="support-dialog" id="support-dialog" aria-labelledby="support-title">
-      <form method="dialog" class="support-dialog-inner">
-        <button class="support-close" value="close" aria-label="Destek penceresini kapat">×</button>
-        <span class="support-heart" aria-hidden="true">♡</span>
-        <p class="eyebrow">Bu rehber ücretsiz kalacak</p>
-        <h2 id="support-title">Emeğe destek ol</h2>
-        <p>Bağışlar; bağlantıları güncel tutmaya, yeni araçlar geliştirmeye ve rehberi herkes için ücretsiz sürdürmeye yardımcı olur.</p>
-        <button class="support-donate" id="support-donate" type="button" disabled>Bağış bağlantısı yakında</button>
-        <button class="support-share" id="support-share" type="button">Şimdilik rehberi paylaş</button>
-        <small>Bağış hesabı veya ödeme sayfası eklenince bu düğme doğrudan ödeme ekranını açacak.</small>
-      </form>
+      <div class="support-dialog-inner">
+        <button class="support-close" id="support-dialog-close" type="button" aria-label="Destek penceresini kapat">×</button>
+        <span class="support-heart" aria-hidden="true">🫀</span>
+        <p class="eyebrow">Bağımsız & Reklamsız Girişim</p>
+        <h2 id="support-title">Projeye Destek Ol</h2>
+        <p>AİÖHL Rehberin öğrencilerin hayatını kolaylaştırmak için geliştirilmektedir. İster bağış yapın, ister yatırım veya iş birliği sağlayın; dilediğiniz gibi katkıda bulunabilirsiniz.</p>
+
+        <div class="support-info-card">
+          <div class="support-info-row">
+            <span class="support-info-label">Alıcı / Ad Soyad</span>
+            <strong class="support-info-val">Muhammed Emin Çelenk</strong>
+          </div>
+
+          <div class="support-info-row iban-row">
+            <span class="support-info-label">IBAN</span>
+            <div class="iban-content-wrap">
+              <code class="support-iban-code" id="support-iban-text">TR00 0000 0000 0000 0000 0000 00</code>
+              <button type="button" class="btn-copy-iban" id="btn-copy-iban" aria-label="IBAN'ı kopyala">
+                <span>Kopyala</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="support-info-row">
+            <span class="support-info-label">İletişim & Geri Bildirim</span>
+            <a href="mailto:emintarcin@icloud.com?subject=A%C4%B0%C3%96HL%20Rehberin%20Destek" class="support-contact-link">emintarcin@icloud.com</a>
+          </div>
+        </div>
+
+        <button class="support-share" id="support-share" type="button">🔗 Şimdilik Rehberi Paylaş</button>
+        <small>Desteğiniz için teşekkür ederiz. Tüm katkılar doğrudan platformun sürdürülebilirliğine aktarılır.</small>
+      </div>
     </dialog>
 
     <noscript>
