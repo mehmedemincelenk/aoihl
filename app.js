@@ -711,6 +711,96 @@ const GLOSSARY = [
     "term": "Bilgi Yönetim Sistemi",
     "definition": "Kayıt, ders, kredi, sınav ve öğrencilik bilgilerinin elektronik ortamda yürütüldüğü resmî sistemdir.",
     "verified": true
+  },
+  {
+    "term": "Ek-C2 belgesi",
+    "definition": "Askerlik erteleme (tecil) işlemlerinde açık lise öğrenciliğini ispat etmek için e-Devlet'ten veya okuldan alınan resmî durum belgesidir.",
+    "analogy": "Askerlik şubesine sunulan 'öğrenimim resmen devam ediyor' onay belgesi.",
+    "verified": true
+  },
+  {
+    "term": "Geçici mezuniyet belgesi (Çıkma belgesi)",
+    "definition": "Diploması henüz basılmamış mezunların e-Devlet'ten veya okuldan aldığı, diploma yerine geçen ve üniversite/iş kayıtlarında geçerli belgedir.",
+    "analogy": "Orijinal diploma basılana kadar kapıları açan resmî geçici lisans.",
+    "verified": true
+  },
+  {
+    "term": "Baraj ders (Türk Dili ve Edebiyatı)",
+    "definition": "Sınavına 3 kez girilse dahi muaf olunamayan, mezuniyet için mutlaka en az 45 alarak başarılması şart olan ortak derstir.",
+    "analogy": "Geçilmeden programın bitirilemediği kesin zorunlu ana görev.",
+    "verified": true
+  },
+  {
+    "term": "Devamsızlık sınırı (%20)",
+    "definition": "Yüz yüze eğitim derslerinde toplam sürenin %20'sinden fazlasına özürsüz katılmayan öğrencinin o dersten başarısız sayılması kuralıdır.",
+    "analogy": "Okuldaki yüz yüze ders hakkını kaybetmeme eşiği.",
+    "verified": true
+  },
+  {
+    "term": "İntibak (Kredi denklik)",
+    "definition": "Örgün ortaöğretimden açık liseye geçen öğrencilerin önceki okullarında başardıkları derslerin açık lise kredi ve dönemlerine aktarılmasıdır.",
+    "analogy": "Eski okulda topladığın puan ve seviyelerin yeni programa resmen taşınması.",
+    "verified": true
+  },
+  {
+    "term": "3. Dönem sınavı (Temmuz sınavı)",
+    "definition": "Sınav tarihi itibarıyla 17 veya 18 yaşını doldurmuş öğrencilere açılan, mezuniyeti hızlandıran yaz dönemi sınavıdır.",
+    "analogy": "Yazın açılan ek dönem; erken mezuniyet için büyük fırsat sunar.",
+    "verified": true
+  },
+  {
+    "term": "Ortaöğretim Başarı Puanı (OBP)",
+    "definition": "Lise diploma notunun hesaplanarak YKS yerleştirme puanına eklenen ve üniversite sıralamasını doğrudan etkileyen katsayıdır.",
+    "analogy": "Lise boyunca topladığın puanların üniversite sınavına getirdiği kalıcı bonus puan.",
+    "verified": true
+  },
+  {
+    "term": "e-İtiraz sistemi",
+    "definition": "MEB ÖDSGM tarafından sınav sorularına, cevap anahtarına veya sınav sonuçlarına resmî itirazların elektronik ortamda yapıldığı sistemdir.",
+    "analogy": "Sınav değerlendirmelerine karşı MEB'in resmî dijital itiraz kapısı.",
+    "verified": true
+  },
+  {
+    "term": "35 kredi sınırı (Dönemlik azami sınır)",
+    "definition": "Bir dönem kayıt yenileme sürecinde öğrencinin seçebileceği en fazla ders kredisi / adedi sınırlamasıdır.",
+    "analogy": "Bir dönemde çantana alabileceğin maksimum görev ve kredi kapasitesi.",
+    "verified": true
+  },
+  {
+    "term": "212 kredi kuralı",
+    "definition": "AÖİHL 4 yıllık imam hatip lisesi programından mezun olabilmek için toplanması gereken asgari toplam kredidir.",
+    "analogy": "İmam hatip diploması için aşılması gereken asgari toplam puan barajı.",
+    "verified": true
+  },
+  {
+    "term": "8 dönem şartı",
+    "definition": "Liseden mezun olabilmek için geride bırakılması gereken asgari resmî eğitim dönemi sayısıdır (örgünden gelenlerin dönemleri dahil edilir).",
+    "analogy": "Diploma kilidinin açılması için tamamlanması gereken asgari sezon sayısı.",
+    "verified": true
+  },
+  {
+    "term": "İndirimli öğrenci seyahat kartı",
+    "definition": "Öğrencilik durumu 'Aktif' olan açık lise öğrencilerinin şehir içi toplu taşımadan indirimli yararlanmasını sağlayan karttır.",
+    "analogy": "Öğrencilik durumunun şehir içi ulaşımda sağladığı resmî indirim hakkı.",
+    "verified": true
+  },
+  {
+    "term": "MEBİM (444 0 632)",
+    "definition": "Millî Eğitim Bakanlığı İletişim Merkezi; açık lise kayıt, sınav, mevzuat ve şifre sorunlarında 7/24 telefonla destek veren resmî hattır.",
+    "analogy": "Bakanlığın her türlü sorunda aranabilecek doğrudan canlı destek hattı.",
+    "verified": true
+  },
+  {
+    "term": "Telafi eğitimi",
+    "definition": "Hastalık, rapor veya okulca kabul edilen zorunlu mazeretler nedeniyle yapılamayan yüz yüze derslerin kurumca belirlenen takvimde tamamlanmasıdır.",
+    "analogy": "Kaçırılan yüz yüze derslerin mazeret sonrası okul tarafından telafi edilmesi.",
+    "verified": true
+  },
+  {
+    "term": "Halk Eğitimi Merkezi (HEM)",
+    "definition": "Açık lise ilk kayıt, evrak teslimi, şifre sıfırlama ve rehberlik işlemlerinin yürütüldüğü yaygın MEB kurumudur.",
+    "analogy": "İlçedeki açık öğretim ana operasyon ve kayıt bürosu.",
+    "verified": true
   }
 ];
 
@@ -954,6 +1044,120 @@ const PATHWAYS = [
     "sourceUrl": "https://aoihl.meb.gov.tr/www/sss-sinavlarla-ilgili-sorular/icerik/16",
     "sourceLabel": "Resmî sınav SSS",
     "verified": true
+  },
+  {
+    "title": "Askerlik tecili (Ek-C2) belgesi nasıl alınır?",
+    "description": "Erteleme işlemleri için açık lise öğrenci durum belgesini temin et.",
+    "category": "belge",
+    "emoji": "🎖️",
+    "tags": "askerlik tecil ek c2 erteleme şube askerlik durum belgesi e-devlet",
+    "steps": [
+      "Öğrenci sisteminde kayıt durumunun 'Aktif' olduğunu doğrula (donuk öğrencilere tecil hakkı verilmez).",
+      "e-Devlet'te Açık Öğretim Liseleri Öğrenci Durum Belgesi hizmetini aç.",
+      "Belge üretim amacını 'Askerlik İşlemleri' olarak seçerek barkodlu belgeni oluştur ve yazdır.",
+      "Askerlik şubesi kurum onaylı Ek-C2 talep ederse yüz yüze eğitim okuluna veya HEM'e başvurarak ıslak imzalı/mühürlü belge al."
+    ],
+    "note": "Açık lisede askerlik ertelemesi (tecili) azami 22 yaşını doldurduğun yılın sonuna kadar geçerlidir. Kaydını her dönem yenilemen şarttır.",
+    "url": "https://www.turkiye.gov.tr/milli-egitim-acik-ogretim-liseleri-ogrenci-durum-belgesi-sorgulama",
+    "cta": "e-Devlet'ten belge al",
+    "sourceUrl": "https://aoihl.meb.gov.tr/www/sik-sorulan-sorularsss-genel-konular/icerik/12",
+    "sourceLabel": "Genel konular SSS",
+    "verified": true
+  },
+  {
+    "title": "Örgün liseden AÖİHL'ye geçiş ve intibak nasıl yapılır?",
+    "description": "Örgün liseden açık imam hatibe geçiş, ders ve kredi aktarımı adımları.",
+    "category": "kayit",
+    "emoji": "🔄",
+    "tags": "örgün lise geçiş intibak tasdikname kredi denklik aöihl kayıt",
+    "steps": [
+      "MEB açık liseye geçiş genelgesi kapsamındaki istisnai şartları (hafızlık, sporcu, mazeret vb.) taşıdığını doğrula.",
+      "Mevcut örgün okulundan ayrılış tasdiknamesi veya öğrenim durum belgesi ile onaylı not dökümünü (transkript) al.",
+      "Yüz yüze AÖİHL eğitimi veren en yakın Anadolu İmam Hatip Lisesine şahsen başvurarak kaydını yaptır.",
+      "Okul komisyonunun örgünde geçtiğin dersleri AÖİHL kredilerine aktarmasını (intibak) bekle ve sistemden kredilerini kontrol et."
+    ],
+    "note": "Örgün lisede başarılan derslerin kredileri intibakla aynen sisteme eklenir ve okunan dönemler toplam döneme sayılır.",
+    "url": "https://aoihl.meb.gov.tr/www/kayit-duyurusu/icerik/482/tr",
+    "cta": "Kayıt duyurusunu aç",
+    "sourceUrl": "https://aoihl.meb.gov.tr/meb_iys_dosyalar/2026_09/6aa3ac9f8da14767119316_A%C3%A7ik_Ogretim_Imam_Hatip_Lisesi_Yeni_Kayit_Kilavuzu.pdf",
+    "sourceLabel": "Yeni kayıt kılavuzu",
+    "verified": true
+  },
+  {
+    "title": "Sınav ve kayıt yenileme ücreti nasıl yatırılır?",
+    "description": "MEB ödeme sistemi ve anlaşmalı bankalardan harç yatırma adımları.",
+    "category": "kayit",
+    "emoji": "💳",
+    "tags": "ödeme kayıt yenileme sınav ücreti harç meb ödeme odeme ziraat atm",
+    "steps": [
+      "MEB Destek Hizmetleri Genel Müdürlüğü Ödeme Sistemi adresini (odeme.meb.gov.tr) aç.",
+      "Başvuru listesinden 'Açık Öğretim Kurumları Kayıt / Sınav Ücreti' seçeneğini belirle.",
+      "T.C. kimlik numaranı ve cep telefonu numaranı eksiksiz gir.",
+      "Banka/kredi kartı ile ödemeyi tamamla; dekontu PDF olarak kaydet (veya Ziraat/Halkbank/Vakıfbank ATM'lerinden kartsız yatır)."
+    ],
+    "note": "Şehit/gazi yakını, engelli (%40 ve üzeri) veya mevzuatta sayılan muafiyet grubundaki öğrenciler ücret ödemez; durum belgelerini okuluna onaylatmalıdır.",
+    "url": "https://odeme.meb.gov.tr/",
+    "cta": "MEB Ödeme Sistemine Git",
+    "sourceUrl": "https://aoihl.meb.gov.tr/www/kayit-duyurusu/icerik/482/tr",
+    "sourceLabel": "Resmî kayıt duyurusu",
+    "verified": true
+  },
+  {
+    "title": "Biyometrik fotoğraf sisteme nasıl eklenir / güncellenir?",
+    "description": "Sınav giriş belgesinde zorunlu olan fotoğraflı kaydı tamamlama.",
+    "category": "destek",
+    "emoji": "📸",
+    "tags": "fotoğraf biyometrik vesikalık sistem sınav giriş belgesi fotoğraf güncelleme",
+    "steps": [
+      "Son 6 ay içinde çekilmiş, arka fonu beyaz vesikalık/biyometrik fotoğraf hazırla.",
+      "Yüz yüze eğitim gördüğün imam hatip lisesine veya en yakın Halk Eğitimi Merkezine şahsen git.",
+      "T.C. kimlik kartınla birlikte fotoğrafını MEB Bilgi Yönetim Sistemi'ne taratıp işlet.",
+      "Öğrenci sistemine girerek fotoğrafının sisteme yüklendiğini ve sınav giriş belgende göründüğünü doğrula."
+    ],
+    "note": "Sınav giriş belgesinde fotoğrafı bulunmayan öğrenciler Millî Eğitim Bakanlığı kuralları gereğince sınava kesinlikle alınmaz!",
+    "url": "https://aolweb.meb.gov.tr/ogrenci_giris.aspx",
+    "cta": "Öğrenci sistemini aç",
+    "sourceUrl": "https://aoihl.meb.gov.tr/www/sss-sinavlarla-ilgili-sorular/icerik/16",
+    "sourceLabel": "Resmî sınav SSS",
+    "verified": true
+  },
+  {
+    "title": "İndirimli öğrenci seyahat kartı nasıl çıkarılır?",
+    "description": "Şehir içi toplu taşıma için öğrenci pasosu / seyahat kartı alma adımları.",
+    "category": "belge",
+    "emoji": "🚌",
+    "tags": "öğrenci kartı paso istanbulkart ego eshot toplu taşıma indirimli seyahat kartı",
+    "steps": [
+      "e-Devlet Kapısı'ndan güncel tarihli barkodlu Açık Öğretim Liseleri Öğrenci Belgesi indir.",
+      "Yaşadığın ilin toplu taşıma merkezinin web sitesine (Örn: istanbulkart.istanbul veya EGO/ESHOT) gir.",
+      "Online kart başvuru ekranında T.C. kimlik ve biyometrik vesikalık fotoğrafını yükle.",
+      "Sistem MEB servisinden öğrenciliğini onaylayamazsa indirdiğin e-Devlet barkodlu öğrenci belgesini sisteme yükleyip kartını teslim al."
+    ],
+    "note": "İndirimli ulaşım kartından sadece kaydı 'Aktif' olan öğrenciler yararlanabilir. Kayıt yenilenmezse kart indirimi otomatik sonlanır.",
+    "url": "https://www.turkiye.gov.tr/milli-egitim-acik-ogretim-liseleri-ogrenci-durum-belgesi-sorgulama",
+    "cta": "e-Devlet öğrenci belgesi al",
+    "sourceUrl": "https://aoihl.meb.gov.tr/www/sik-sorulan-sorularsss-genel-konular/icerik/12",
+    "sourceLabel": "Genel konular SSS",
+    "verified": true
+  },
+  {
+    "title": "Orijinal lise diploması okuldan nasıl teslim alınır?",
+    "description": "Basılı resmî lise diplomasını okuldan şahsen veya vekâletle teslim alma.",
+    "category": "belge",
+    "emoji": "📜",
+    "tags": "diploma orijinal lise diploması mezun teslim vekâlet okul çıkma belgesi",
+    "steps": [
+      "Öğrenci Bilgi Yönetim Sistemi'nde mezuniyet incelemesinin bittiğini ve durumunun 'Mezun' olduğunu gör.",
+      "e-Devlet üzerinden Geçici Mezuniyet Belgesi (Çıkma Belgesi) alarak acil işlemlerde kullan.",
+      "Yüz yüze eğitim aldığın imam hatip lisesini arayarak basılı diplomanın okula ulaşıp ulaşmadığını sor.",
+      "Nüfus cüzdanın veya T.C. kimlik kartınla bizzat okula giderek imza karşılığında orijinal diplomanı teslim al."
+    ],
+    "note": "Diplomayı öğrencinin yerine yalnızca noter onaylı resmî vekâletnameye sahip birinci derece yakını veya kanuni vekili teslim alabilir.",
+    "url": "https://aoihl.meb.gov.tr/www/sss-mezuniyet-ve-yuksek-ogretim-ile-ilgili-sorular/icerik/17",
+    "cta": "Mezuniyet SSS'yi aç",
+    "sourceUrl": "https://aoihl.meb.gov.tr/www/sss-mezuniyet-ve-yuksek-ogretim-ile-ilgili-sorular/icerik/17",
+    "sourceLabel": "Resmî Mezuniyet SSS",
+    "verified": true
   }
 ];
 
@@ -1078,9 +1282,6 @@ const resourcesSearchEl = document.querySelector("#resources-search");
 const resourcesCountEl = document.querySelector("#resources-count");
 const resourcesEmptyEl = document.querySelector("#resources-empty");
 const stickySearchWrappers = [...document.querySelectorAll(".sticky-search-wrapper")];
-const installBannerEl = document.querySelector("#install-banner");
-const installAppEl = document.querySelector("#install-app");
-const installCloseEl = document.querySelector("#install-close");
 const viewTabsEl = document.querySelector("#view-tabs");
 const viewSections = [...document.querySelectorAll("[data-view-section]")];
 const supportButtonEl = document.querySelector("#support-button");
@@ -1090,24 +1291,38 @@ const supportShareEl = document.querySelector("#support-share");
 const HASH_VIEWS = {
   "#ust": "home",
   "#ana-sayfa": "home",
-  "#hepsi": "home",
+  "#tumu": "all",
+  "#hepsi": "all",
+  "#sayisal-sozel": "sayisal-sozel",
+  "#kendi-kendini-sayisalci-sozelci-yap": "sayisal-sozel",
+  "#tavsiyeler": "tavsiyeler",
+  "#taktikler": "tavsiyeler",
   "#cikmis-sorular": "exams",
   "#aoihl-nedir": "about",
   "#sozluk": "glossary",
   "#kaynaklar": "resources",
   "#islem-yollari": "pathways",
   "#egitimci-kurumlar": "educators",
-  "#prompt-title": "prompts"
+  "#prompt-title": "prompts",
+  "#destek-ol": "support",
+  "#destek": "support",
+  "#iban": "support",
+  "#uyari": "home",
+  "#yasal-uyari": "home"
 };
 const VIEW_HASHES = {
   home: "#ana-sayfa",
+  all: "#tumu",
+  "sayisal-sozel": "#sayisal-sozel",
+  tavsiyeler: "#tavsiyeler",
   exams: "#cikmis-sorular",
   about: "#aoihl-nedir",
   glossary: "#sozluk",
   resources: "#kaynaklar",
   pathways: "#islem-yollari",
   educators: "#egitimci-kurumlar",
-  prompts: "#prompt-title"
+  prompts: "#prompt-title",
+  support: "#destek-ol"
 };
 
 function normalize(value) {
@@ -1190,19 +1405,25 @@ function svgFor(icon) {
 }
 
 function setActiveView(view, shouldScroll = true) {
-  const activeView = viewTabsEl.querySelector(`[data-view="${view}"]`) ? view : "home";
+  const activeView = (view === "all" || document.querySelector(`[data-view="${view}"]`)) ? view : "home";
   document.body.dataset.activeView = activeView;
   viewSections.forEach((section) => {
-    section.hidden = section.dataset.viewSection !== activeView;
+    if (activeView === "all") {
+      section.hidden = false;
+    } else {
+      section.hidden = section.dataset.viewSection !== activeView;
+    }
   });
-  viewTabsEl.querySelectorAll("[data-view]").forEach((button) => {
+  document.querySelectorAll("[data-view]").forEach((button) => {
     button.setAttribute("aria-pressed", String(button.dataset.view === activeView));
   });
-  const activeButton = viewTabsEl.querySelector(`[data-view="${activeView}"]`);
-  if (activeView === "home") {
-    viewTabsEl.scrollTo({ left: 0, behavior: "smooth" });
-  } else {
-    activeButton?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
+  if (viewTabsEl) {
+    const activeButton = viewTabsEl.querySelector(`[data-view="${activeView}"]`);
+    if (activeView === "home" || activeView === "all") {
+      viewTabsEl.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
+      activeButton?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
+    }
   }
   renderGlossary();
   render();
@@ -1421,22 +1642,21 @@ function updateStickySearchState() {
   isStickyTicking = false;
 }
 
-viewTabsEl.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-view]");
-  if (!button) return;
-  const view = button.dataset.view;
-  const hash = VIEW_HASHES[view] || "#ana-sayfa";
-  if (location.hash !== hash) history.pushState(null, "", hash);
-  setActiveView(view);
-});
-
 document.addEventListener("click", (event) => {
-  if (event.target.closest("#support-button, #bottom-support-trigger, #landing-support-trigger, #landing-support-modal-btn, #landing-donate-btn, #landing-invest-btn")) {
-    supportDialogEl?.showModal();
-    return;
+  const viewBtn = event.target.closest("[data-view]");
+  if (viewBtn) {
+    const view = viewBtn.dataset.view;
+    if (view) {
+      const hash = VIEW_HASHES[view] || "#ana-sayfa";
+      if (location.hash !== hash) history.pushState(null, "", hash);
+      setActiveView(view);
+      return;
+    }
   }
-  if (event.target.closest("#support-dialog-close")) {
-    supportDialogEl?.close();
+  if (event.target.closest("#support-button, #bottom-support-trigger, #landing-support-trigger, #landing-support-modal-btn, #landing-support-donate-btn, #landing-donate-btn, #landing-invest-btn")) {
+    const hash = VIEW_HASHES["support"] || "#destek-ol";
+    if (location.hash !== hash) history.pushState(null, "", hash);
+    setActiveView("support");
     return;
   }
   const copyIbanBtn = event.target.closest("#btn-copy-iban");
@@ -1467,7 +1687,7 @@ document.addEventListener("click", (event) => {
   if (location.hash !== hash) history.pushState(null, "", hash);
   setActiveView(requestedView, false);
   const target = document.querySelector(link.getAttribute("href"));
-  if (requestedView === "home") {
+  if (requestedView === "home" || requestedView === "all") {
     window.scrollTo({ top: 0, behavior: "smooth" });
   } else {
     target?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -1476,9 +1696,12 @@ document.addEventListener("click", (event) => {
 
 function restoreViewFromUrl() {
   const hash = location.hash;
+  if (hash === "#uyari" || hash === "#yasal-uyari") {
+    openDisclaimerModal();
+  }
   const view = HASH_VIEWS[hash] || "home";
   setActiveView(view, false);
-  if (view === "home") {
+  if (view === "home" || view === "all") {
     window.scrollTo({ top: 0, behavior: "auto" });
     return;
   }
@@ -1522,36 +1745,6 @@ promptGridEl.addEventListener("click", async (event) => {
   }
 });
 
-window.addEventListener("beforeinstallprompt", (event) => {
-  event.preventDefault();
-  installPrompt = event;
-  if (localStorage.getItem("aoihl-install-dismissed") !== "1") installBannerEl.hidden = false;
-});
-
-installAppEl.addEventListener("click", async () => {
-  if (!installPrompt) return;
-  installPrompt.prompt();
-  await installPrompt.userChoice;
-  installPrompt = null;
-  installBannerEl.hidden = true;
-});
-
-installCloseEl.addEventListener("click", () => {
-  installBannerEl.hidden = true;
-  localStorage.setItem("aoihl-install-dismissed", "1");
-});
-
-window.addEventListener("appinstalled", () => {
-  installPrompt = null;
-  installBannerEl.hidden = true;
-});
-
-supportButtonEl?.addEventListener("click", () => supportDialogEl?.showModal());
-
-supportDialogEl?.addEventListener("click", (event) => {
-  if (event.target === supportDialogEl) supportDialogEl.close();
-});
-
 supportShareEl?.addEventListener("click", async () => {
   const shareData = {
     title: "AİÖHL REHBERİN",
@@ -1574,10 +1767,64 @@ if ("serviceWorker" in navigator && location.protocol !== "file:") {
   window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js"));
 }
 
+function initChecklist() {
+  const checklistEl = document.querySelector("#student-checklist");
+  if (!checklistEl) return;
+  const inputs = checklistEl.querySelectorAll("input[data-check-id]");
+  inputs.forEach((input) => {
+    const id = input.dataset.checkId;
+    input.checked = localStorage.getItem(`aoihl-check-${id}`) === "1";
+    input.addEventListener("change", () => {
+      localStorage.setItem(`aoihl-check-${id}`, input.checked ? "1" : "0");
+    });
+  });
+}
+
+const disclaimerModalEl = document.querySelector("#disclaimer-modal");
+const disclaimerConfirmBtn = document.querySelector("#disclaimer-confirm-btn");
+const disclaimerCloseBtn = document.querySelector("#disclaimer-close-btn");
+const footerDisclaimerTrigger = document.querySelector("#footer-disclaimer-trigger");
+
+function openDisclaimerModal() {
+  if (!disclaimerModalEl) return;
+  disclaimerModalEl.hidden = false;
+  document.body.classList.add("disclaimer-open");
+  disclaimerConfirmBtn?.focus();
+}
+
+function hideDisclaimerModal() {
+  if (!disclaimerModalEl) return;
+  disclaimerModalEl.hidden = true;
+  document.body.classList.remove("disclaimer-open");
+}
+
+function initDisclaimerModal() {
+  if (!disclaimerModalEl) return;
+
+  disclaimerConfirmBtn?.addEventListener("click", hideDisclaimerModal);
+  disclaimerCloseBtn?.addEventListener("click", hideDisclaimerModal);
+
+  disclaimerModalEl.addEventListener("click", (event) => {
+    if (event.target === disclaimerModalEl) {
+      hideDisclaimerModal();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !disclaimerModalEl.hidden) {
+      hideDisclaimerModal();
+    }
+  });
+
+  footerDisclaimerTrigger?.addEventListener("click", openDisclaimerModal);
+}
+
 renderPrompts();
 renderPathways();
 renderExams();
 renderGlossary();
 render();
+initChecklist();
+initDisclaimerModal();
 restoreViewFromUrl();
 updateStickySearchState();

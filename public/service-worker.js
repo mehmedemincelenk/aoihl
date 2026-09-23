@@ -1,4 +1,4 @@
-const CACHE_NAME = "aiohl-rehberin-v17";
+const CACHE_NAME = "aiohl-rehberin-v22";
 const APP_SHELL = [
   "./",
   "./index.html",

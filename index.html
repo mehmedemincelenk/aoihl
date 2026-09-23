@@ -14,27 +14,52 @@
     <title>AİÖHL REHBERİN — Açık İmam Hatip Öğrenci Rehberi</title>
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#ust">İçeriğe geç</a>
 
+    <div class="sacred-bar sacred-top" aria-label="Bismillahirrahmanirrahim">
+      <span class="sacred-arabic" dir="rtl" lang="ar">بسم الله الرحمن الرحيم</span>
+    </div>
+
     <header class="topbar">
       <div class="shell brand-row">
-        <a class="brand" href="#ust" aria-label="AİÖHL Rehberin ana sayfa" data-view-link="home">
+        <a class="brand" href="#ust" aria-label="AİÖHL Rehberin ana sayfa" data-view="home">
           <span class="brand-mark" aria-hidden="true">A</span>
           <span>
             <strong>AİÖHL REHBERİN</strong>
             <small>AÖİHL öğrencileri için</small>
           </span>
         </a>
-        <span class="official-pill">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 12 2 2 4-5m6 3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
-          Bağımsız rehber
-        </span>
-        <button class="support-button" id="support-button" type="button" aria-haspopup="dialog">
-          <span class="support-organ-heart" aria-hidden="true">🫀</span> Destek ol
-        </button>
+        <nav class="desktop-nav" id="desktop-nav" aria-label="Masaüstü Gezinti Menüsü">
+          <button type="button" data-view="home" class="nav-item" aria-pressed="true">Ana sayfa</button>
+          <button type="button" data-view="all" class="nav-item" aria-pressed="false">Tümü</button>
+          <button type="button" data-view="sayisal-sozel" class="nav-item" aria-pressed="false">Sayısal / Sözel</button>
+          <button type="button" data-view="tavsiyeler" class="nav-item" aria-pressed="false">Tavsiyeler</button>
+          <button type="button" data-view="exams" class="nav-item" aria-pressed="false">Çıkmış sorular</button>
+          <button type="button" data-view="about" class="nav-item" aria-pressed="false">AÖİHL nedir?</button>
+          <button type="button" data-view="glossary" class="nav-item" aria-pressed="false">Sözlük</button>
+          <button type="button" data-view="resources" class="nav-item" aria-pressed="false">Resmî kaynaklar</button>
+          <button type="button" data-view="pathways" class="nav-item" aria-pressed="false">İşlem yolları</button>
+          <button type="button" data-view="educators" class="nav-item" aria-pressed="false">Kur’an kursları</button>
+          <button type="button" data-view="prompts" class="nav-item" aria-pressed="false">Oyunlaştır</button>
+          <button type="button" data-view="support" class="nav-item nav-item-support" aria-pressed="false">
+            <span class="support-organ-heart" aria-hidden="true">🫀</span> Destek Ol
+          </button>
+        </nav>
+        <div class="topbar-actions">
+          <span class="official-pill">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 12 2 2 4-5m6 3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+            Bağımsız rehber
+          </span>
+        </div>
       </div>
     </header>
 
@@ -44,7 +69,7 @@
         <div class="intro-hero">
           <div class="landing-pill">
             <span class="pulse-dot" aria-hidden="true"></span>
-            <span>Açık Öğretim İmam Hatip Lisesi Platformu</span>
+            <span>Resmî işlemler öncesinde mutlaka MEBİM’i (444 0 632) arayınız</span>
           </div>
           <h1 id="page-title">
             Açık İmam Hatip’te kaybolma.
@@ -58,30 +83,19 @@
               <span>Sınav Sorularını Aç</span>
               <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
             </button>
-            <button type="button" class="landing-support-pill" id="landing-support-modal-btn">
-              <span class="support-organ-heart" aria-hidden="true">🫀</span> Destek Ol & IBAN
-            </button>
           </div>
         </div>
 
-        <!-- Astra 6 Style Metrics Bar -->
-        <div class="landing-stats-grid">
-          <div class="stat-card">
-            <span class="stat-number">44+</span>
-            <span class="stat-label">Resmî MEB Bağlantısı</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">3×3</span>
-            <span class="stat-label">Kompakt Sınav Arşivi</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">28+</span>
-            <span class="stat-label">Sadeleştirilmiş Terim</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">%100</span>
-            <span class="stat-label">Bağımsız & Reklamsız</span>
-          </div>
+        <!-- Roadmap Teaser Banner -->
+        <div class="landing-roadmap-teaser">
+          <div class="roadmap-teaser-badge">💡 AÖİHL Mezuniyet Formülü</div>
+          <h2 class="roadmap-teaser-title">
+            Matematik, kimya, fizik, biyoloji derslerini hiç görmeyerek 4 yılda mezun olabileceğini biliyor muydun?!
+          </h2>
+          <button type="button" class="btn-roadmap-jump" data-view-jump="sayisal-sozel">
+            <span>Yol Haritasına Git</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </button>
         </div>
 
         <!-- Modern Bento Feature Grid -->
@@ -107,12 +121,32 @@
             <span class="bento-link">Kılavuzları Gör →</span>
           </article>
 
+          <article class="bento-card" data-view-jump="tavsiyeler" tabindex="0" role="button">
+            <div class="bento-badge">💡 Hayat Kurtaran</div>
+            <h3>Tavsiyeler & Taktikler</h3>
+            <p>Ölümcül hatalar, YKS OBP avantajı, askerlik tecili, garanti seçmeli dersler ve dönem kontrol listesi.</p>
+            <span class="bento-link">Tavsiyeleri Gör →</span>
+          </article>
+
           <article class="bento-card" data-view-jump="educators" tabindex="0" role="button">
             <div class="bento-badge">🕌 Talebelere Özel</div>
             <h3>Kur’an Kursları & Hafızlık</h3>
             <p>Yüz yüze eğitim alan ve hafızlık çalışan öğrencilere yönelik muafiyet, devam ve denklik yönergeleri.</p>
             <span class="bento-link">Kurs Modülünü Aç →</span>
           </article>
+        </div>
+
+        <!-- Tümünü Gör Alanı -->
+        <div class="landing-all-bar">
+          <div class="landing-all-info">
+            <span class="landing-all-tag">Tüm Rehber Tek Sayfada</span>
+            <h3>Sınavlar, sözlük, resmî bağlantılar ve işlem yollarının tümünü gör</h3>
+            <p>Bölümler arasında geçiş yapmadan tüm rehber içeriğini kesintisiz tek sayfada incelemek için tıklayın.</p>
+          </div>
+          <button type="button" class="btn-all-bar" data-view-jump="all">
+            <span>Tümünü Gör</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </button>
         </div>
 
         <!-- Dedicated Modern Support Card -->
@@ -123,9 +157,154 @@
           </div>
           <h2>Projeyi Birlikte Yaşatalım</h2>
           <p>AİÖHL Rehberin hiçbir ticari gelir veya fon almadan, tamamen açık lise öğrencilerinin hayatını kolaylaştırmak için geliştirilmektedir. Sunucu ve bakım masraflarına katkı sağlamak veya projeye yatırım yapmak için dilediğiniz gibi destek olabilirsiniz.</p>
-          <button type="button" class="btn-support-donate" id="landing-support-donate-btn">
+          <button type="button" class="btn-support-donate" id="landing-support-donate-btn" data-view-jump="support">
             <span class="support-organ-heart" aria-hidden="true">🫀</span> IBAN ve Destek Bilgileri
           </button>
+        </div>
+      </section>
+
+      <!-- Sayısal / Sözel Yol Haritası Bölümü -->
+      <section class="roadmap-zone shell" id="sayisal-sozel" aria-labelledby="roadmap-title" data-view-section="sayisal-sozel" hidden>
+        <div class="roadmap-hero">
+          <h2 id="roadmap-title">Kendi Kendini Sayısalcı veya Sözelci Yap</h2>
+          <p class="roadmap-lead">
+            Sayısal derslerle vakit kaybetmek istemeyen sözelciler ile sözel ezberlerle boğuşmak istemeyen sayısalcılar için MEB muafiyet mevzuatına dayalı sade mezuniyet rehberi.
+          </p>
+        </div>
+
+        <!-- Mezuniyet Şartları (Madde Madde & Sade) -->
+        <div class="roadmap-block">
+          <h3 class="block-title">Mezuniyet Şartları</h3>
+          <ul class="roadmap-bullets">
+            <li><strong>Toplam Kredi:</strong> Mezuniyet için gereken asgari toplam kredi <strong>212</strong>’dir.</li>
+            <li><strong>Toplam Dönem:</strong> Asgari <strong>8 dönem</strong> (4 yıl) eğitim tamamlanmalıdır.</li>
+            <li><strong>Alan Kredisi:</strong> Yüz yüze okulda alınan meslek derslerinden en az <strong>96 kredi</strong> toplanmalıdır.</li>
+            <li><strong>Zorunlu Ders Borcu:</strong> Sistemde hiçbir zorunlu (ortak) ders kalmamalıdır (bu dersler ya geçilmeli ya da muaf olunmalıdır).</li>
+            <li><strong>3 Sınavda Muafiyet:</strong> Bir ortak (zorunlu) dersin sınavına 3 farklı dönem girip başarısız olan (0 net alınsa dahi) öğrenci o dersten <strong>MUAF</strong> olur. Kredisi gelmez fakat öğrenci artık o dersten sorumlu tutulmaz; mezuniyet engeli ortadan kalkar.</li>
+            <li><strong>TDE Muaf Olamaz (Baraj Ders):</strong> <strong>Türk Dili ve Edebiyatı</strong> dersinden muaf olunamaz. Mezun olabilmek için sınavlarından en az 45 alarak mutlaka başarılı olunması kanuni zorunluluktur.</li>
+            <li><strong>Kritik 4 Yıl Kuralı (Hayati Not):</strong> Ortak derslerden muaf olmak için gereken 3 sınav dönemi 4 yıl içerisinde tamamlanabiliyor. <em>ANCAK Yabancı Dil (7-8) ve T.C. İnkılap Tarihi (1-2) dersleri 7. ve 8. dönemlerde açıldığı için</em>, bu derslerden 3 kez sınava girip muaf olmaya 4 yıllık süre YETMEZ! Bu nedenle 4 yılda mezun olmak isteyen bir öğrencinin <strong>YDİL ve İnkılap Tarihi derslerinden mutlaka BAŞARILI OLMASI gerekir</strong>.</li>
+          </ul>
+        </div>
+
+        <!-- Çıkış Yolları ve Stratejiler -->
+        <div class="roadmap-block">
+          <h3 class="block-title">Stratejinizi Belirleyin: Çıkış Yolları</h3>
+          <div class="path-cards-grid">
+            <!-- Sözelci Stratejisi -->
+            <article class="path-card path-sozel">
+              <div class="path-badge">SÖZELCİ STRATEJİSİ</div>
+              <h4>Sıfır Matematik, Fizik, Kimya, Biyoloji</h4>
+              <p class="path-desc">Sayısal derslerin hiçbirini görmeden ve tek bir soru çözmeden 4 yılda mezun olabilirsiniz.</p>
+              <ul class="path-steps">
+                <li><strong>Sayısal dersleri muafiyete bırakın:</strong> 1. sınıftan itibaren Matematik, Fizik, Kimya ve Biyoloji sınavlarına girip boş verseniz dahi 3 sınav sonunda bu derslerin tamamından <strong>resmen MUAF</strong> olursunuz.</li>
+                <li><strong>Temel kredi:</strong> Alan dersleri (96) + YD, İnk., TDE (66) + Sözel ortaklar (30) ile <strong>192 krediye</strong> ulaşırsınız.</li>
+                <li><strong>Seçmeli krediyi tamamlayın:</strong> 212 barajına ulaşmak için gereken <strong>+20 seçmeli krediyi</strong> tek oturumda kolay sözel derslerden (Girişimcilik, Sosyoloji, Yönetim Bilimleri, Psikoloji, Mantık) toplayarak 4 yılda sıfır sayısalla diplomanızı alırsınız.</li>
+              </ul>
+            </article>
+
+            <!-- Sayısalcı Stratejisi -->
+            <article class="path-card path-sayisal">
+              <div class="path-badge">SAYISALCI STRATEJİSİ</div>
+              <h4>Sözel Ezberlerden Kurtulup Sayısal Temel İnşa Etme</h4>
+              <p class="path-desc">YKS Sayısal (Tıp, Mühendislik) hedefinize odaklanırken gereksiz ezberlerden muaf olun.</p>
+              <ul class="path-steps">
+                <li><strong>Sayısal ortakları cebe koyun:</strong> TYT ve AYT Sayısal sınavına hazırlanırken Matematik, Fizik, Kimya ve Biyoloji ortak derslerini vererek doğrudan <strong>+48 kredi</strong> kazanırsınız.</li>
+                <li><strong>Temel kredi:</strong> Alan dersleri (96) + YD, İnk., TDE (66) + Sayısal ortaklar (48) ile doğrudan <strong>210 krediye</strong> ulaşırsınız.</li>
+                <li><strong>Sözel ortaklardan muaf olun:</strong> Tarih, Coğrafya, Felsefe gibi sözel ortak derslerden 3 sınavda muaf olarak zamanınızı sayısal çalışmaya ayırabilirsiniz.</li>
+                <li><strong>Yalnızca +2 seçmeli kredi:</strong> 212 barajı için sadece tek bir 2 kredilik seçmeli derse (örneğin Girişimcilik: +2) girerek toplam 212 krediyle 4 yılda mezun olursunuz!</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tavsiyeler & Taktikler Bölümü -->
+      <section class="tactics-zone shell" id="tavsiyeler" aria-labelledby="tactics-title" data-view-section="tavsiyeler" hidden>
+        <div class="tactics-hero">
+          <h2 id="tactics-title">Tavsiyeler & Hayat Kurtaran Taktikler</h2>
+          <p class="tactics-lead">
+            Açık lise sürecinde dönemi heba etmemek, bürokratik engellere takılmamak ve diplomayı en yüksek puanla almak için bilmeniz gereken kritik noktalar.
+          </p>
+        </div>
+
+        <!-- 1. Dönem Kontrol Listesi & Girişimcilik Tavsiyesi -->
+        <div class="tactic-card">
+          <div class="tactic-header">
+            <span class="tactic-icon">📋</span>
+            <div>
+              <h3>Dönem Kontrol Listesi</h3>
+              <p>Her sınav döneminde adım adım yapmanız gerekenler:</p>
+            </div>
+          </div>
+          <div class="interactive-checklist" id="student-checklist">
+            <label class="check-item">
+              <input type="checkbox" data-check-id="c1" />
+              <span class="check-box-custom"></span>
+              <span class="check-text"><strong>1. Harç:</strong> MEB Ödeme veya banka ATM'sinden dönem harcını yatırın.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" data-check-id="c2" />
+              <span class="check-box-custom"></span>
+              <span class="check-text"><strong>2. Ders Seçimi:</strong> Parayı yatırdıktan sonra sisteme girip derslerinizi kendiniz seçin.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" data-check-id="c3" />
+              <span class="check-box-custom"></span>
+              <span class="check-text"><strong>3. Yüz Yüze Eğitim:</strong> Okulunuzun ders programına uyun, %20 devamsızlık sınırını aşmayın.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" data-check-id="c4" />
+              <span class="check-box-custom"></span>
+              <span class="check-text"><strong>4. Fotoğraf &amp; Sınav Merkezi:</strong> Sistemdeki fotoğrafınızı ve sınav merkezinizi erkenden doğrulayın.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" data-check-id="c5" />
+              <span class="check-box-custom"></span>
+              <span class="check-text"><strong>5. Giriş Belgesi:</strong> Sınavdan bir hafta önce fotoğraflı belgenizi ve geçerli kimliğinizi hazırlayın.</span>
+            </label>
+          </div>
+          <div class="course-tip-box">
+            <strong>💡 Seçmeli Ders Tavsiyesi:</strong> Puan için değil; vizyon, kendi işini kurma ve değer üretme zihniyeti kazanmak için seçmelilerden mutlaka <strong>Girişimcilik</strong> dersini alın. Kalan kontenjanı dilediğiniz gibi seçebilirsiniz.
+          </div>
+        </div>
+
+        <!-- 2. Hayati Tuzaklar & Resmî Haklar -->
+        <div class="tactic-card alert-tactic-card">
+          <div class="tactic-header">
+            <span class="tactic-icon">🛑</span>
+            <div>
+              <h3>Hayati Tuzaklar &amp; Resmî Haklar</h3>
+              <p>Döneminizin yanmaması ve haklarınızı korumak için bilmeniz gerekenler:</p>
+            </div>
+          </div>
+          <ul class="compact-bullets danger-bullets">
+            <li><strong>Parayı yatırıp ders seçmemek:</strong> Harç yatınca sistem otomatik ders seçmez; kendiniz seçmezseniz dönem boş geçer.</li>
+            <li><strong>Yüz yüze devamsızlık:</strong> Alan derslerinde devamsızlıktan kalırsanız krediniz tamamen silinir, okulunuz 1 yıl uzar.</li>
+            <li><strong>Fotoğraf uyuşmazlığı:</strong> Sistemde fotoğrafı eski veya görünmeyen adaylar sınav salonuna alınmaz.</li>
+            <li><strong>Askerlik tecili:</strong> 22 yaşına ve 12 döneme kadar öğrencilerin askerlik tecil hakkı vardır (Ek-C2 belgesi).</li>
+            <li><strong>e-Devlet mezuniyet belgesi:</strong> Basılı diplomayı beklemeden, e-Devlet barkodlu belgesiyle üniversite ve işe başvurabilirsiniz.</li>
+            <li><strong>SGK güvencesi:</strong> Aktif öğrenci kaldığınız sürece 20 yaşına kadar aileniz üzerinden ücretsiz sağlık hakkınız devam eder.</li>
+          </ul>
+        </div>
+
+        <!-- 3. Öğrenci Avantajları & Devlet Destekleri -->
+        <div class="tactic-card rights-tactic-card">
+          <div class="tactic-header">
+            <span class="tactic-icon">🎁</span>
+            <div>
+              <h3>Öğrenci Avantajları &amp; Devlet Destekleri</h3>
+              <p>Lisede ve üniversitede açılan ücretsiz imkânlar ile devlet fonları:</p>
+            </div>
+          </div>
+          <ul class="compact-bullets">
+            <li><span class="rights-mini-badge">Lise</span> <strong>MüzeKart:</strong> İndirimli öğrenci fiyatıyla Türkiye'deki tüm müzelere 1 yıl sınırsız giriş.</li>
+            <li><span class="rights-mini-badge">Lise</span> <strong>%50 İndirimli Dijital Servisler:</strong> Öğrenci belgesiyle Spotify, YouTube ve Apple Music yarı fiyatına.</li>
+            <li><span class="rights-mini-badge">Lise</span> <strong>İndirimli Ulaşım:</strong> Belediyelerde öğrenci abonmanı ve TCDD hızlı trenlerinde %15 indirim.</li>
+            <li><span class="rights-mini-badge edu-badge">Üniversite (.edu.tr)</span> <strong>Google Gemini Pro &amp; Workspace:</strong> Akademik e-posta ile yapay zekâ ve bulut araçları.</li>
+            <li><span class="rights-mini-badge edu-badge">Üniversite (.edu.tr)</span> <strong>GitHub Student Pack &amp; Office 365:</strong> Copilot, Canva Pro, JetBrains ve 1 TB OneDrive ücretsiz.</li>
+            <li><span class="rights-mini-badge gov-badge">Devlet Fonu</span> <strong>150.000 TL Faizsiz Evlilik Kredisi:</strong> 18–29 yaş gençlere 2 yıl geri ödemesiz, 48 ay vadeli faizsiz fon (Aile Bakanlığı / e-Devlet).</li>
+            <li><span class="rights-mini-badge gov-badge">Devlet Desteği</span> <strong>GSB Seyahatsever:</strong> Yaz aylarında 81 ildeki KYK yurtlarında 5 gün tamamen ücretsiz konaklama.</li>
+          </ul>
         </div>
       </section>
 
@@ -346,21 +525,70 @@
           <div class="center-empty" id="resources-empty" hidden>Bu aramayla eşleşen kaynak bulunamadı.</div>
         </div>
       </section>
+
+      <!-- Destek Ol & Girişim Bölümü (Sayfa Görünümü) -->
+      <section class="support-page-section shell" id="destek-ol" aria-labelledby="support-page-title" data-view-section="support" hidden>
+        <div class="support-page-hero">
+          <span class="support-page-heart" aria-hidden="true">🫀</span>
+          <p class="eyebrow">Bağımsız &amp; Gönüllü Girişim</p>
+          <h2 id="support-page-title">Projeye Destek Ol</h2>
+          <p class="support-page-lead">
+            AİÖHL Rehberin hiçbir ticari gelir veya fon almadan, tamamen açık lise öğrencilerinin hayatını kolaylaştırmak için geliştirilmektedir. Sunucu ve bakım masraflarına katkı sağlamak veya projeye sponsorluk / yatırım yapmak için dilediğiniz gibi destek olabilirsiniz.
+          </p>
+        </div>
+
+        <div class="support-page-card">
+          <div class="support-info-row">
+            <span class="support-info-label">Alıcı / Ad Soyad</span>
+            <strong class="support-info-val">Muhammed Emin Çelenk</strong>
+          </div>
+
+          <div class="support-info-row iban-row">
+            <span class="support-info-label">IBAN Numarası</span>
+            <div class="iban-content-wrap">
+              <code class="support-iban-code" id="support-iban-text">TR00 0000 0000 0000 0000 0000 00</code>
+              <button type="button" class="btn-copy-iban" id="btn-copy-iban" aria-label="IBAN'ı kopyala">
+                <span>Kopyala</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="support-info-row contact-row">
+            <span class="support-info-label">İletişim &amp; İş Birliği</span>
+            <a href="mailto:emintarcin@icloud.com?subject=A%C4%B0%C3%96HL%20Rehberin%20Destek" class="support-contact-link">emintarcin@icloud.com</a>
+          </div>
+        </div>
+
+        <div class="support-page-actions">
+          <button class="support-share" id="support-share" type="button">
+            🔗 Şimdilik Rehberi Paylaş
+          </button>
+          <p class="support-page-note">
+            Desteğiniz için teşekkür ederiz. Tüm katkılar doğrudan platformun sürdürülebilirliğine ve içeriklerin güncel tutulmasına aktarılır.
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="shell footer-inner">
-        <p><strong>AİÖHL REHBERİN</strong> bağımsız bir bağlantı rehberidir; MEB’e bağlı değildir. Resmî işlemler bağlantısını verdiğimiz MEB ve e-Devlet sayfalarında yapılır.</p>
-        <p>Kaynak incelemesi: 21 Eylül 2026. Resmî işlem öncesinde açtığın kaynağı kontrol et.</p>
+        <p><strong>Önemli Uyarı:</strong> Mevzuat zamanla değişebilir veya sehven hata yapılmış olabilir; resmî işlem öncesinde mutlaka MEBİM’i (444 0 632) veya okulunuzu arayarak güncel durumu teyit ediniz. Doğabilecek aksaklıklardan sorumluluk kabul edilmez. <button type="button" class="footer-disclaimer-btn" id="footer-disclaimer-trigger">Yasal Uyarıyı Oku</button></p>
+        <p><strong>AİÖHL REHBERİN</strong> bağımsız ve gönüllü bir bağlantı rehberidir; MEB’e bağlı değildir. Resmî işlemler bağlantısını verdiğimiz MEB ve e-Devlet sayfalarında yapılır.</p>
+        <div class="sacred-bar sacred-bottom" aria-label="Elhamdulillah">
+          <span class="sacred-arabic" dir="rtl" lang="ar">الحمد لله</span>
+        </div>
       </div>
     </footer>
 
     <nav class="bottom-bar" id="bottom-bar" aria-label="Bölüm gezintisi">
       <div class="bottom-bar-scroller" id="view-tabs">
         <button type="button" data-view="home" aria-pressed="true">Ana sayfa</button>
-        <button type="button" class="bottom-support-chip" id="bottom-support-trigger" aria-haspopup="dialog">
+        <button type="button" data-view="all" aria-pressed="false">Tümü</button>
+        <button type="button" data-view="support" aria-pressed="false">
           <span class="support-organ-heart" aria-hidden="true">🫀</span> Destek Ol
         </button>
+        <button type="button" data-view="sayisal-sozel" aria-pressed="false">Sayısal / Sözel</button>
+        <button type="button" data-view="tavsiyeler" aria-pressed="false">Tavsiyeler</button>
         <button type="button" data-view="exams" aria-pressed="false">Çıkmış sorular</button>
         <button type="button" data-view="about" aria-pressed="false">AÖİHL nedir?</button>
         <button type="button" data-view="glossary" aria-pressed="false">Sözlük</button>
@@ -375,50 +603,92 @@
       <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></svg>
     </button>
 
-    <aside class="install-banner" id="install-banner" hidden aria-labelledby="install-title">
-      <span class="install-icon" aria-hidden="true">A</span>
-      <span>
-        <strong id="install-title">AİÖHL REHBERİN’i telefona ekle</strong>
-        <small>Uygulama gibi aç; temel rehberlere çevrimdışı da ulaş.</small>
-      </span>
-      <button id="install-app" type="button">Yükle</button>
-      <button class="install-close" id="install-close" type="button" aria-label="Yükleme önerisini kapat">×</button>
-    </aside>
-
-    <dialog class="support-dialog" id="support-dialog" aria-labelledby="support-title">
-      <div class="support-dialog-inner">
-        <button class="support-close" id="support-dialog-close" type="button" aria-label="Destek penceresini kapat">×</button>
-        <span class="support-heart" aria-hidden="true">🫀</span>
-        <p class="eyebrow">Bağımsız & Reklamsız Girişim</p>
-        <h2 id="support-title">Projeye Destek Ol</h2>
-        <p>AİÖHL Rehberin öğrencilerin hayatını kolaylaştırmak için geliştirilmektedir. İster bağış yapın, ister yatırım veya iş birliği sağlayın; dilediğiniz gibi katkıda bulunabilirsiniz.</p>
-
-        <div class="support-info-card">
-          <div class="support-info-row">
-            <span class="support-info-label">Alıcı / Ad Soyad</span>
-            <strong class="support-info-val">Muhammed Emin Çelenk</strong>
+    <!-- Yasal Bilgilendirme ve Sorumluluk Reddi Modalı (Yalnızca tıklanınca açılır) -->
+    <div class="disclaimer-backdrop" id="disclaimer-modal" role="presentation" hidden>
+      <div class="disclaimer-card" role="dialog" aria-modal="true" aria-labelledby="disclaimer-title" aria-describedby="disclaimer-intro">
+        <div class="disclaimer-header">
+          <div class="disclaimer-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="16" x2="12" y2="12"/>
+              <line x1="12" y1="8" x2="12.01" y2="8"/>
+            </svg>
           </div>
-
-          <div class="support-info-row iban-row">
-            <span class="support-info-label">IBAN</span>
-            <div class="iban-content-wrap">
-              <code class="support-iban-code" id="support-iban-text">TR00 0000 0000 0000 0000 0000 00</code>
-              <button type="button" class="btn-copy-iban" id="btn-copy-iban" aria-label="IBAN'ı kopyala">
-                <span>Kopyala</span>
-              </button>
-            </div>
+          <div style="flex: 1;">
+            <span class="disclaimer-eyebrow">AİÖHL REHBERİN</span>
+            <h2 id="disclaimer-title" class="disclaimer-title">Yasal Bilgilendirme &amp; Sorumluluk Reddi</h2>
           </div>
-
-          <div class="support-info-row">
-            <span class="support-info-label">İletişim & Geri Bildirim</span>
-            <a href="mailto:emintarcin@icloud.com?subject=A%C4%B0%C3%96HL%20Rehberin%20Destek" class="support-contact-link">emintarcin@icloud.com</a>
-          </div>
+          <button type="button" class="disclaimer-close-btn" id="disclaimer-close-btn" aria-label="Kapat">×</button>
         </div>
 
-        <button class="support-share" id="support-share" type="button">🔗 Şimdilik Rehberi Paylaş</button>
-        <small>Desteğiniz için teşekkür ederiz. Tüm katkılar doğrudan platformun sürdürülebilirliğine aktarılır.</small>
+        <p class="disclaimer-intro" id="disclaimer-intro">
+          AİÖHL REHBERİN platformunu kullanırken bilmeniz gereken temel hususlar:
+        </p>
+
+        <!-- 5 Bilgilendirme Maddesi -->
+        <div class="disclaimer-scroll-container">
+          <ul class="disclaimer-points">
+            <li class="disclaimer-point">
+              <span class="disclaimer-num">1</span>
+              <div>
+                <strong>Resmî Kurum Değildir (Bağımsız Rehber)</strong>
+                <p>
+                  AİÖHL REHBERİN; MEB veya ÖDSGM’ye bağlı resmî bir kurum değildir. Tamamen öğrencilerin hayatını kolaylaştırmak için gönüllü geliştirilmiş bağımsız bir dijital rehberdir.
+                </p>
+                <small class="disclaimer-sub">Tüm resmî işlemler yalnızca <code>aoihl.meb.gov.tr</code>, <code>aolweb.meb.gov.tr</code> ve e-Devlet kapısı üzerinden yapılır.</small>
+              </div>
+            </li>
+
+            <li class="disclaimer-point">
+              <span class="disclaimer-num">2</span>
+              <div>
+                <strong>Mevzuat Değişiklikleri &amp; Teyit</strong>
+                <p>
+                  Genelgeler, kayıt takvimleri, ders kredileri ve muafiyet kuralları dönemsel olarak güncellenebilir. Resmî ve mali bir işlem gerçekleştirmeden önce bilgilerinizi bizzat MEBİM (444 0 632) veya yüz yüze eğitim gördüğünüz kurum idaresinden teyit etmeniz tavsiye edilir.
+                </p>
+              </div>
+            </li>
+
+            <li class="disclaimer-point">
+              <span class="disclaimer-num">3</span>
+              <div>
+                <strong>Sorumluluk Reddi</strong>
+                <p>
+                  Sitedeki yol haritaları ve tavsiyeler bilgi amaçlıdır; hukuki veya idari geçerliliği yoktur. Bilgilerin kullanımından doğabilecek aksaklıklardan platform ve geliştiricileri sorumlu tutulamaz.
+                </p>
+              </div>
+            </li>
+
+            <li class="disclaimer-point">
+              <span class="disclaimer-num">4</span>
+              <div>
+                <strong>Telif Hakları &amp; Resmî Kaynak Bağlantıları</strong>
+                <p>
+                  Sitede listelenen çıkmış sorular ve kılavuzlar MEB mülkiyetindedir. Platform bu materyalleri yalnızca orijinal MEB sunucu linkleriyle öğrencilerin erişimine sunmaktadır.
+                </p>
+              </div>
+            </li>
+
+            <li class="disclaimer-point">
+              <span class="disclaimer-num">5</span>
+              <div>
+                <strong>Kullanıcı Beyanı</strong>
+                <p>
+                  Siteye giriş yapan kullanıcılar, buradaki içerikleri resmî bir tebligat yerine koymayacağını ve alacağı tüm kararlarda resmî MEB kılavuzlarını temel alacağını kabul eder.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="disclaimer-actions">
+          <button type="button" class="disclaimer-confirm-btn" id="disclaimer-confirm-btn">
+            <span>Anladım, Kapat</span>
+          </button>
+        </div>
       </div>
-    </dialog>
+    </div>
+
 
     <noscript>
       <p class="noscript">Bölümleri ve kaynak listesini görmek için JavaScript’i etkinleştirin.</p>
