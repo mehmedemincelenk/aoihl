@@ -40,19 +40,20 @@
         </a>
         <nav class="desktop-nav" id="desktop-nav" aria-label="Masaüstü Gezinti Menüsü">
           <button type="button" data-view="home" class="nav-item" aria-pressed="true">Ana sayfa</button>
-          <button type="button" data-view="all" class="nav-item" aria-pressed="false">Tümü</button>
-          <button type="button" data-view="sayisal-sozel" class="nav-item" aria-pressed="false">Sayısal / Sözel</button>
-          <button type="button" data-view="tavsiyeler" class="nav-item" aria-pressed="false">Tavsiyeler</button>
           <button type="button" data-view="exams" class="nav-item" aria-pressed="false">Çıkmış sorular</button>
           <button type="button" data-view="about" class="nav-item" aria-pressed="false">AÖİHL nedir?</button>
           <button type="button" data-view="glossary" class="nav-item" aria-pressed="false">Sözlük</button>
-          <button type="button" data-view="resources" class="nav-item" aria-pressed="false">Resmî kaynaklar</button>
-          <button type="button" data-view="pathways" class="nav-item" aria-pressed="false">İşlem yolları</button>
-          <button type="button" data-view="educators" class="nav-item" aria-pressed="false">Kur’an kursları</button>
+          <button type="button" data-view="tavsiyeler" class="nav-item" aria-pressed="false">Tavsiyeler</button>
           <button type="button" data-view="prompts" class="nav-item" aria-pressed="false">Oyunlaştır</button>
-          <button type="button" data-view="support" class="nav-item nav-item-support" aria-pressed="false">
+          <button type="button" data-view="resources" class="nav-item" aria-pressed="false">Resmî kaynaklar</button>
+          <button type="button" data-view="support" class="nav-item nav-item-support is-disabled" disabled aria-disabled="true" aria-pressed="false">
             <span class="support-organ-heart" aria-hidden="true">🫀</span> Destek Ol
           </button>
+          <button type="button" data-view="apps" class="nav-item is-disabled" disabled aria-disabled="true" aria-pressed="false">Uygulamalar</button>
+          <button type="button" data-view="sayisal-sozel" class="nav-item is-disabled" disabled aria-disabled="true" aria-pressed="false">Sayısal / Sözel</button>
+          <button type="button" data-view="pathways" class="nav-item is-disabled" disabled aria-disabled="true" aria-pressed="false">İşlem yolları</button>
+          <button type="button" data-view="educators" class="nav-item is-disabled" disabled aria-disabled="true" aria-pressed="false">Kur’an kursları</button>
+          <button type="button" data-view="all" class="nav-item is-disabled" disabled aria-disabled="true" aria-pressed="false">Tümü</button>
         </nav>
         <div class="topbar-actions">
           <span class="official-pill">
@@ -526,6 +527,15 @@
         </div>
       </section>
 
+      <!-- Uygulamalar Bölümü -->
+      <section class="apps-zone shell" id="uygulamalar" aria-labelledby="apps-title" data-view-section="apps" hidden>
+        <div class="apps-placeholder">
+          <p class="eyebrow">Faydalı Araçlar &amp; Dijital Hizmetler</p>
+          <h2 id="apps-title">Uygulamalar</h2>
+          <p>AÖİHL öğrencileri için mobil/web uygulamaları, hesaplayıcılar ve pratik araçlar çok yakında burada listelenecektir.</p>
+        </div>
+      </section>
+
       <!-- Destek Ol & Girişim Bölümü (Sayfa Görünümü) -->
       <section class="support-page-section shell" id="destek-ol" aria-labelledby="support-page-title" data-view-section="support" hidden>
         <div class="support-page-hero">
@@ -583,19 +593,20 @@
     <nav class="bottom-bar" id="bottom-bar" aria-label="Bölüm gezintisi">
       <div class="bottom-bar-scroller" id="view-tabs">
         <button type="button" data-view="home" aria-pressed="true">Ana sayfa</button>
-        <button type="button" data-view="all" aria-pressed="false">Tümü</button>
-        <button type="button" data-view="support" aria-pressed="false">
-          <span class="support-organ-heart" aria-hidden="true">🫀</span> Destek Ol
-        </button>
-        <button type="button" data-view="sayisal-sozel" aria-pressed="false">Sayısal / Sözel</button>
-        <button type="button" data-view="tavsiyeler" aria-pressed="false">Tavsiyeler</button>
         <button type="button" data-view="exams" aria-pressed="false">Çıkmış sorular</button>
         <button type="button" data-view="about" aria-pressed="false">AÖİHL nedir?</button>
         <button type="button" data-view="glossary" aria-pressed="false">Sözlük</button>
-        <button type="button" data-view="resources" aria-pressed="false">Resmî kaynaklar</button>
-        <button type="button" data-view="pathways" aria-pressed="false">İşlem yolları</button>
-        <button type="button" data-view="educators" aria-pressed="false">Kur’an kursları</button>
+        <button type="button" data-view="tavsiyeler" aria-pressed="false">Tavsiyeler</button>
         <button type="button" data-view="prompts" aria-pressed="false">Oyunlaştır</button>
+        <button type="button" data-view="resources" aria-pressed="false">Resmî kaynaklar</button>
+        <button type="button" data-view="support" class="is-disabled" disabled aria-disabled="true" aria-pressed="false">
+          <span class="support-organ-heart" aria-hidden="true">🫀</span> Destek Ol
+        </button>
+        <button type="button" data-view="apps" class="is-disabled" disabled aria-disabled="true" aria-pressed="false">Uygulamalar</button>
+        <button type="button" data-view="sayisal-sozel" class="is-disabled" disabled aria-disabled="true" aria-pressed="false">Sayısal / Sözel</button>
+        <button type="button" data-view="pathways" class="is-disabled" disabled aria-disabled="true" aria-pressed="false">İşlem yolları</button>
+        <button type="button" data-view="educators" class="is-disabled" disabled aria-disabled="true" aria-pressed="false">Kur’an kursları</button>
+        <button type="button" data-view="all" class="is-disabled" disabled aria-disabled="true" aria-pressed="false">Tümü</button>
       </div>
     </nav>
 

@@ -295,6 +295,17 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
     color: #ffffff;
   }
 
+  .desktop-nav .nav-item:disabled,
+  .desktop-nav .nav-item.is-disabled {
+    opacity: 0.38;
+    cursor: not-allowed;
+    pointer-events: none;
+    background: transparent !important;
+    color: #8da49d !important;
+    box-shadow: none !important;
+    transform: none !important;
+  }
+
   .topbar-actions {
     display: flex;
     align-items: center;
@@ -444,6 +455,17 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
   transform: translateY(-1px);
 }
 .bottom-bar-scroller button:focus-visible { outline: 3px solid #77b8a7; outline-offset: 2px; }
+.bottom-bar-scroller button:disabled,
+.bottom-bar-scroller button.is-disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+  pointer-events: none;
+  background: #f1f4f3 !important;
+  color: #7d8e89 !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
 
 
 body[data-active-view="about"] .about-school { padding-top: 28px; }
@@ -1558,10 +1580,10 @@ body[data-active-view="about"] .about-school { padding-top: 28px; }
 .student-card-grid b { color: var(--green-800); font-size: 10px; }
 .student-card-grid small { margin-top: 3px; color: var(--muted); font-size: 9px; line-height: 1.4; }
 .student-card-template > p { margin: 11px 0 0; padding-top: 10px; border-top: 1px solid #dce9e4; color: #71501b; font-size: 9px; }
-.educator-disclaimer { margin: 18px 0 0; color: var(--muted); font-size: 10px; text-align: center; }
-.educator-placeholder { min-height: 52vh; display: grid; align-content: center; justify-items: center; padding: 34px 18px; text-align: center; }
-.educator-placeholder h2 { margin: 0; font-size: clamp(27px, 7vw, 42px); letter-spacing: -.04em; }
-.educator-placeholder > p:last-child { max-width: 520px; margin: 10px 0 0; color: var(--muted); }
+.educator-placeholder, .apps-placeholder { min-height: 52vh; display: grid; align-content: center; justify-items: center; padding: 34px 18px; text-align: center; }
+.educator-placeholder h2, .apps-placeholder h2 { margin: 0; font-size: clamp(27px, 7vw, 42px); letter-spacing: -.04em; }
+.educator-placeholder > p:last-child, .apps-placeholder > p:not(.eyebrow) { max-width: 520px; margin: 10px 0 0; color: var(--muted); }
+.apps-zone { padding-block: 34px 42px; }
 .quick-access-heading { grid-column: 1 / -1; }
 .quick-access-heading h2 { margin: 0 0 10px; color: var(--ink); font-size: 24px; letter-spacing: -.03em; }
 
@@ -2940,7 +2962,7 @@ body { font-size: 16px; line-height: 1.6; }
 .support-button, .bottom-bar-scroller button, .chip, .pathway-chip, .exam-filter {
   min-height: 40px; font-size: 13px; padding-inline: 14px;
 }
-.about-school, .pathways, .glossary-zone, .prompt-lab, .exam-center, .educator-hub { padding-block: 44px; }
+.about-school, .pathways, .glossary-zone, .prompt-lab, .exam-center, .educator-hub, .apps-zone { padding-block: 44px; }
 .about-shell { padding: 20px; }
 .about-basics, .about-split, .pathway-grid, .glossary-grid, .prompt-grid { gap: 16px; }
 .about-lead { padding: 18px; }

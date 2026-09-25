@@ -1304,6 +1304,8 @@ const HASH_VIEWS = {
   "#islem-yollari": "pathways",
   "#egitimci-kurumlar": "educators",
   "#prompt-title": "prompts",
+  "#uygulamalar": "apps",
+  "#apps": "apps",
   "#destek-ol": "support",
   "#destek": "support",
   "#iban": "support",
@@ -1322,6 +1324,7 @@ const VIEW_HASHES = {
   pathways: "#islem-yollari",
   educators: "#egitimci-kurumlar",
   prompts: "#prompt-title",
+  apps: "#uygulamalar",
   support: "#destek-ol"
 };
 
@@ -1405,7 +1408,11 @@ function svgFor(icon) {
 }
 
 function setActiveView(view, shouldScroll = true) {
-  const activeView = (view === "all" || document.querySelector(`[data-view="${view}"]`)) ? view : "home";
+  const targetBtn = document.querySelector(`[data-view="${view}"]`);
+  if (targetBtn && (targetBtn.disabled || targetBtn.classList.contains("is-disabled") || targetBtn.getAttribute("aria-disabled") === "true")) {
+    view = "home";
+  }
+  const activeView = (document.querySelector(`[data-view="${view}"]:not([disabled]):not(.is-disabled)`)) ? view : "home";
   document.body.dataset.activeView = activeView;
   viewSections.forEach((section) => {
     if (activeView === "all") {
@@ -1645,6 +1652,11 @@ function updateStickySearchState() {
 document.addEventListener("click", (event) => {
   const viewBtn = event.target.closest("[data-view]");
   if (viewBtn) {
+    if (viewBtn.disabled || viewBtn.classList.contains("is-disabled") || viewBtn.getAttribute("aria-disabled") === "true") {
+      event.preventDefault();
+      event.stopPropagation();
+      return;
+    }
     const view = viewBtn.dataset.view;
     if (view) {
       const hash = VIEW_HASHES[view] || "#ana-sayfa";
@@ -1652,12 +1664,6 @@ document.addEventListener("click", (event) => {
       setActiveView(view);
       return;
     }
-  }
-  if (event.target.closest("#support-button, #bottom-support-trigger, #landing-support-trigger, #landing-support-modal-btn, #landing-support-donate-btn, #landing-donate-btn, #landing-invest-btn")) {
-    const hash = VIEW_HASHES["support"] || "#destek-ol";
-    if (location.hash !== hash) history.pushState(null, "", hash);
-    setActiveView("support");
-    return;
   }
   const copyIbanBtn = event.target.closest("#btn-copy-iban");
   if (copyIbanBtn) {
@@ -1673,6 +1679,11 @@ document.addEventListener("click", (event) => {
   const jumpBtn = event.target.closest("[data-view-jump]");
   if (jumpBtn) {
     const view = jumpBtn.dataset.viewJump;
+    const targetBtn = document.querySelector(`[data-view="${view}"]`);
+    if (targetBtn && (targetBtn.disabled || targetBtn.classList.contains("is-disabled"))) {
+      event.preventDefault();
+      return;
+    }
     const hash = VIEW_HASHES[view] || "#ana-sayfa";
     if (location.hash !== hash) history.pushState(null, "", hash);
     setActiveView(view);
